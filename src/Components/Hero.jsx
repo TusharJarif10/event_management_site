@@ -4,6 +4,11 @@ import wedding from "../assets/wedding.jpg";
 import concert from "../assets/concert.jpg";
 import videography from "../assets/videograpy.jpg";
 import cellular from "../assets/cellular.jpg";
+import award from "../assets/award.jpg";
+import business from "../assets/business.jpg";
+import trade from "../assets/trade-fair.jpg";
+import birthday from "../assets/birthday.jpg";
+import meeting from "../assets/meeting.jpg";
 
 import { Button } from '@mui/material';
 
@@ -88,10 +93,10 @@ const Hero = () => {
       <div className="mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-28 xl:mx-16">
+          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="group-hover:opacity-60 transition duration-500" src={corporate} alt="corporate-event" />
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={corporate} alt="corporate-event" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   CORPORATE EVENTS
@@ -105,7 +110,7 @@ const Hero = () => {
 
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="group-hover:opacity-60 transition duration-500" src={wedding} alt="weddings" />
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={wedding} alt="weddings" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   WEDDINGS
@@ -118,7 +123,7 @@ const Hero = () => {
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="group-hover:opacity-60 transition duration-500" src={concert} alt="concert" />
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={concert} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   CONCERT
@@ -131,7 +136,7 @@ const Hero = () => {
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="group-hover:opacity-60 transition duration-500" src={videography} alt="videography" />
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   PHOTO &
@@ -142,8 +147,54 @@ const Hero = () => {
                   LEARN MORE
                 </Button>
               </div>
-
             </div>
+            <div className=" w-full h-full relative flex justify-center items-center">
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={award} alt="award" />
+              <div className="absolute flex justify-center items-center flex-col gap-2">
+                <h2 className='text-[#fdfeff] text-center'>
+                  AWARD CEREMONY
+                </h2>
+                <Button variant='contained'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </div>
+            <div className=" w-full h-full relative flex justify-center items-center">
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={trade} alt="trade" />
+              <div className="absolute flex justify-center items-center flex-col gap-2">
+                <h2 className='text-[#fdfeff] text-center'>
+                  TRADE FAIR
+                </h2>
+                <Button variant='contained'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </div>
+            <div className=" w-full h-full relative flex justify-center items-center">
+              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={birthday} alt="birthday" />
+              <div className="absolute flex justify-center items-center flex-col gap-2">
+                <h2 className='text-[#fdfeff] text-center'>
+                  BIRTHDAY CELEBRATION
+                </h2>
+                <Button variant='contained'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </div>
+
+            <div className=" w-full h-full relative flex justify-center items-center">
+              <img className="cursor-pointer transition duration-400 hover:opacity-50 " src={meeting} alt="business" />
+              <div className="absolute flex justify-center items-center flex-col gap-2">
+                <h2 className='text-[#ffffff] text-center '>
+                  BUSINESS CONFERENCE
+                </h2>
+                <Button variant='contained'>
+                  LEARN MORE
+                </Button>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
