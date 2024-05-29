@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div
         className="relative flex flex-col lg:flex-row px-4 mx-4 sm:px-8 md:px-12
-               lg:px-20 xl:px-48 mt-20 mb-20 pb-10 pt-10 sm:pt-5 flex-wrap text-wrap"
+               lg:px-20 xl:px-48 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
                >
         {/* text-container */}
         <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-2/4 gap-8 items-center justify-center px-2">
@@ -73,8 +73,8 @@ const Hero = () => {
 
       </div>
 
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 ">
-        <h2 className="w-5/6 px-2 mx-2">
+      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+        <h2 className="w-5/6 px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
         <p className="w-5/6 md:text-xl text-justify flex-wrap text-wrap px-2 mx-2">
@@ -89,7 +89,7 @@ const Hero = () => {
       <div className="mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center">
+          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-20 xl:mx-10">
 
             <div className=" w-full h-full relative flex justify-center items-center">
               <img className="group-hover:opacity-60 transition duration-500" src={corporate} alt="corporate-event" />
