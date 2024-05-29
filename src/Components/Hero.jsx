@@ -1,5 +1,4 @@
 
-import hero3 from "../assets/hero3.png";
 import corporate from "../assets/corporate.jpg";
 import wedding from "../assets/wedding.jpg";
 import concert from "../assets/concert.jpg";
@@ -22,7 +21,7 @@ const Hero = () => {
       <div
         className="relative flex flex-col lg:flex-row px-4 mx-4 sm:px-8 md:px-12
                lg:px-20 xl:px-48 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
-               >
+      >
         {/* text-container */}
         <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-2/4 gap-8 items-center justify-center px-2">
           {/* title */}
@@ -89,7 +88,7 @@ const Hero = () => {
       <div className="mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-20 xl:mx-10">
+          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-28 xl:mx-16">
 
             <div className=" w-full h-full relative flex justify-center items-center">
               <img className="group-hover:opacity-60 transition duration-500" src={corporate} alt="corporate-event" />
@@ -135,7 +134,9 @@ const Hero = () => {
               <img className="group-hover:opacity-60 transition duration-500" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
-                  PHOTO & VIDEOGRAPHY
+                  PHOTO &
+                  <br />
+                  VIDEOGRAPHY
                 </h2>
                 <Button variant='contained'>
                   LEARN MORE
