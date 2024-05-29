@@ -2,6 +2,7 @@
 //import { Link } from 'react-router-dom';
 import { useState } from "react";
 import fes from "../assets/festivida.png";
+import { Button } from "@mui/material";
 
 export default function Navbar() {
 
@@ -9,40 +10,50 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="">
       <div>
         {/* For md screen size */}
 
         {/* For md screen size */}
         {/* For large screens */}
-        <div className="dark:bg-[#F7FDFF] shadow-lg  shadow-[#dcdde0] px-6 py-5">
+        <div className="px-6 py-5">
           <div className="container mx-auto flex items-center justify-between">
             <h1 className="md:w-2/12 cursor-pointer text-gray-800 dark:text-black" aria-label="the Crib.">
               <img className="w-[180px]" src={fes} alt="logo" />
             </h1>
             <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196]  text-[#596196] text-lg  hover:underline">
-                  Home
+                <a href="javascript:void(0)" className=" text-xl  hover:underline">
+                  HOME
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196]  text-[#596196]  text-lg hover:underline">
-                  Service
+                <a href="javascript:void(0)" className=" text-xl hover:underline">
+                  SERVICES
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196]  text-[#596196] text-lg  hover:underline">
-                  Lookbook
+                <a href="javascript:void(0)" className=" text-xl  hover:underline">
+                  PORTFOLIO
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196]  text-[#596196]  text-lg hover:underline">
-                  Contact
-                </a>
+                <div className="pl-20">
+                <Button variant="contained">
+                  CONTACT NOW
+                </Button>
+                </div>
+              
               </li>
             </ul>
+
+
+
             <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
+
+
+
+
 
               <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
                 <button aria-label="view favourites" className="dark:text-[#596196]">
@@ -96,6 +107,8 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+
         {/* For small screen */}
         <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-[#F7FDFF] z-10 inset-0 md:hidden bg-yellow-300 flex-col h-screen w-full`}>
           <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
