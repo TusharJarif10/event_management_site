@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './routes/Home';
 import About from './routes/About';
+import Contact from './Components/contact';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -47,6 +48,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>

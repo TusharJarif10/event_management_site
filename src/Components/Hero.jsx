@@ -9,7 +9,7 @@ import business from "../assets/business.jpg";
 import trade from "../assets/trade-fair.jpg";
 import birthday from "../assets/birthday.jpg";
 import meeting from "../assets/meeting.jpg";
-
+import Contact from '../Components/contact';
 import { Button } from '@mui/material';
 
 
@@ -197,6 +197,19 @@ const Hero = () => {
 
           </div>
         </div>
+      </div>
+
+      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+        <h2>
+          GET IN TOUCH
+        </h2>
+        <p className="w-5/6 lg:w-3/6 xl:w-3/6 md:text-xl text-center flex-wrap text-wrap px-2 mx-2 font-extralight">
+          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at info@luxefete.com or by phone at 305-298-4618.
+        </p>
+
+      </div>
+      <div className=" flex flex-wrap justify-center items-center">
+        <Contact />
       </div>
 
 
