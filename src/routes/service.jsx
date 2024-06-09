@@ -17,9 +17,6 @@ import { useMediaQuery } from '../hooks/use-media-query';
 import { CgMail } from "react-icons/cg";
 
 
-
-
-
 const Service = () => {
 
     const handleEmailClick = () => {
@@ -32,9 +29,9 @@ const Service = () => {
         <>
             <Navbar />
 
-            <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-5 lg:pt-10 xl:pt-10'>
+            <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-10 mb-20 pb-5 lg:pt-10 xl:pt-10'>
 
-                <h2 className='mb-20'>
+                <h2 className='mb-10'>
                     SERVICES
                 </h2>
 

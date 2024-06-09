@@ -55,7 +55,7 @@ const Hero = () => {
         </Button> */}
             <button
 
-              className={"text-xl px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
+              className={"text-lg px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
 
             >
                <HashLink smooth to='/#contact'>GET STARTED</HashLink>
@@ -199,7 +199,6 @@ const Hero = () => {
                 </Button>
               </div>
             </div>
-
 
           </div>
         </div>
