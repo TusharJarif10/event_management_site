@@ -5,12 +5,13 @@ import concert from "../assets/concert.jpg";
 import videography from "../assets/videograpy.jpg";
 import cellular from "../assets/cellular.jpg";
 import award from "../assets/award.jpg";
-import business from "../assets/business.jpg";
 import trade from "../assets/trade-fair.jpg";
 import birthday from "../assets/birthday.jpg";
 import meeting from "../assets/meeting.jpg";
 import Contact from '../Components/contact';
 import { Button } from '@mui/material';
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,7 +31,7 @@ const Hero = () => {
         {/* text-container */}
         <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-2/4 gap-8 items-center justify-center px-2">
           {/* title */}
-          <h1 >Unforgettable Events, Perfectly Crafted</h1>
+          <h1 className="uppercase">Unforgotable Events</h1>
           {/* desc */}
           <p className="md:text-xl text-justify flex-wrap text-wrap">
             Welcome to Festivida, where every occasion becomes a cherished
@@ -52,13 +53,14 @@ const Hero = () => {
         >
           View Our Work
         </Button> */}
-            <Button
-              variant='contained'
-              className=
-              " text-xl px-7 rounded-full bg-card-foreground tracking-tighter"
+            <button
+
+              className={"text-xl px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
+
             >
-              GET STARTED
-            </Button>
+               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
+              
+            </button>
           </div>
         </div>
 
@@ -96,13 +98,15 @@ const Hero = () => {
           <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={corporate} alt="corporate-event" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={corporate} alt="corporate-event" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   CORPORATE EVENTS
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+
+
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#corporate'>LEARN MORE</HashLink>
                 </Button>
               </div>
 
@@ -110,86 +114,88 @@ const Hero = () => {
 
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={wedding} alt="weddings" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={wedding} alt="weddings" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   WEDDINGS
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
-                </Button>
+                <Link to={"/service"}>
+                  <Button variant='contained' color="info">
+                    <HashLink smooth to='/service/#wedding'>LEARN MORE</HashLink>
+                  </Button>
+                </Link>
               </div>
 
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={concert} alt="concert" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={concert} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   CONCERT
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#concert'>LEARN MORE</HashLink>
                 </Button>
               </div>
 
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={videography} alt="videography" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   PHOTO &
                   <br />
                   VIDEOGRAPHY
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#videography'>LEARN MORE</HashLink>
                 </Button>
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={award} alt="award" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   AWARD CEREMONY
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#award'>LEARN MORE</HashLink>
                 </Button>
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={trade} alt="trade" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   TRADE FAIR
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#trade'>LEARN MORE</HashLink>
                 </Button>
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50" src={birthday} alt="birthday" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center'>
                   BIRTHDAY CELEBRATION
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#birthday'>LEARN MORE</HashLink>
                 </Button>
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-400 hover:opacity-50 " src={meeting} alt="business" />
+            <div className=" w-full h-full relative flex justify-center items-center ">
+              <img className="cursor-pointer transition duration-300 hover:opacity-35 " src={meeting} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center '>
                   BUSINESS CONFERENCE
                 </h2>
-                <Button variant='contained'>
-                  LEARN MORE
+                <Button variant='contained' color="info">
+                  <HashLink smooth to='/service/#meeting'>LEARN MORE</HashLink>
                 </Button>
               </div>
             </div>
@@ -199,18 +205,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20" id="contact">
         <h2>
           GET IN TOUCH
         </h2>
         <p className="w-5/6 lg:w-3/6 xl:w-3/6 md:text-xl text-center flex-wrap text-wrap px-2 mx-2 font-extralight">
-          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at info@luxefete.com or by phone at 305-298-4618.
+          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at Festivida74@Gmail.com or by phone at 305-298-4618.
         </p>
+        <div className="flex flex-wrap justify-center items-center" >
+          <Contact />
+        </div>
+      </div>
 
-      </div>
-      <div className=" flex flex-wrap justify-center items-center">
-        <Contact />
-      </div>
 
 
     </>

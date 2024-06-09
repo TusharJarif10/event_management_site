@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 body{
-  /* text-[#8f432e]  */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  @apply bg-gradient-to-b from-[#dcfffd] to-[#e4e6ef] 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  @apply bg-gradient-to-b from-[#ffffff] to-[#c9eaf3]
 }
 
 h1{
-  @apply text-5xl lg:text-5xl xl:text-6xl md:text-3xl sm:text-3xl
+  @apply text-5xl lg:text-5xl xl:text-6xl md:text-3xl sm:text-3xl font-extralight 
 }
 
 
@@ -17,5 +16,18 @@ h2{
   @apply text-4xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-3xl
 }
 
+.active-link {
+  font-weight: bold;
+  color: rgb(255, 255, 255) ;
+  background:#2179A9;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
 
+.inactive-link{
+  font-weight: lighter;
+  font-size: large;
+}
 
