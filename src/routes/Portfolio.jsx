@@ -1,6 +1,7 @@
 import { useMediaQuery } from '../hooks/use-media-query';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import Gallery from '../Components/Gallery';
 
 const Portfolio = () => {
 
@@ -40,12 +41,14 @@ const Portfolio = () => {
                 </p>
             </div>
 
+            <Gallery />
+
             <Footer />
         </>
 
     ) : (
     <>
-
+         <Gallery />
     </>
 
 )
