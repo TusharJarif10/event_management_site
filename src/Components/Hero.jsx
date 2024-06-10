@@ -33,7 +33,7 @@ const Hero = () => {
           {/* title */}
           <h1 className="uppercase">Unforgotable Events</h1>
           {/* desc */}
-          <p className="md:text-xl text-justify flex-wrap text-wrap">
+          <p className="md:text-xl text-justify flex-wrap text-wrap font-extralight">
             Welcome to Festivida, where every occasion becomes a cherished
             memory. We specialize in creating bespoke events tailored to your
             vision, offering a comprehensive range of services including
@@ -58,7 +58,7 @@ const Hero = () => {
               className={"text-lg px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
 
             >
-               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
+               <HashLink slot to='/#contact'>GET STARTED</HashLink>
               
             </button>
           </div>
@@ -83,7 +83,7 @@ const Hero = () => {
         <h2 className="w-5/6 px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
-        <p className="w-5/6 md:text-xl text-justify flex-wrap text-wrap px-2 mx-2">
+        <p className="w-5/6 md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight">
           We are a full service international event planning and design studio
           based in Miami, Florida. Global clients seek our services to plan,
           design, and produce their special events, not only in South Florida,
@@ -97,112 +97,121 @@ const Hero = () => {
 
           <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
 
-            <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={corporate} alt="corporate-event" />
+            <div className=" w-full h-full relative flex justify-center items-center ">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={corporate} alt="corporate-event" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#ffffff] text-center font-extrabold'>
                   CORPORATE EVENTS
                 </h2>
 
+                {/* <button className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
+                      <HashLink slot to='/#contact'>CONTACT NOW</HashLink>
 
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#corporate'>LEARN MORE</HashLink>
-                </Button>
+                    </button> */}
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
+                </button>
               </div>
 
             </div>
 
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={wedding} alt="weddings" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="weddings" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#ffffff] text-center font-extrabold'>
                   WEDDINGS
                 </h2>
                 <Link to={"/service"}>
-                  <Button variant='contained' color="info">
-                    <HashLink smooth to='/service/#wedding'>LEARN MORE</HashLink>
-                  </Button>
+
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#wedding'>LEARN MORE</HashLink>
+                </button>
+             
                 </Link>
               </div>
 
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={concert} alt="concert" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={concert} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#ffffff] text-center font-extrabold'>
                   CONCERT
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#concert'>LEARN MORE</HashLink>
-                </Button>
+                
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
+                </button>
               </div>
 
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={videography} alt="videography" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#ffffff] text-center font-extrabold'>
                   PHOTO &
                   <br />
                   VIDEOGRAPHY
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#videography'>LEARN MORE</HashLink>
-                </Button>
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#videography'>LEARN MORE</HashLink>
+                </button>
+                
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={award} alt="award" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   AWARD CEREMONY
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#award'>LEARN MORE</HashLink>
-                </Button>
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#award'>LEARN MORE</HashLink>
+                </button>
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={trade} alt="trade" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   TRADE FAIR
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#trade'>LEARN MORE</HashLink>
-                </Button>
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
+                </button>
               </div>
             </div>
             <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-50" src={birthday} alt="birthday" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center'>
+                <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   BIRTHDAY CELEBRATION
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#birthday'>LEARN MORE</HashLink>
-                </Button>
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#birthday'>LEARN MORE</HashLink>
+                </button>
               </div>
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center ">
-              <img className="cursor-pointer transition duration-300 hover:opacity-35 " src={meeting} alt="business" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={meeting} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center '>
+                <h2 className='text-[#ffffff] text-center font-extrabold '>
                   BUSINESS CONFERENCE
                 </h2>
-                <Button variant='contained' color="info">
-                  <HashLink smooth to='/service/#meeting'>LEARN MORE</HashLink>
-                </Button>
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <HashLink slot to='/service/#meeting'>LEARN MORE</HashLink>
+                </button>
               </div>
             </div>
 
           </div>
         </div>
       </div>
+
+        
 
       <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20" id="contact">
         <h2>
@@ -216,7 +225,18 @@ const Hero = () => {
         </div>
       </div>
 
+      <div id="insta" className="my-10 pt-10 pb-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                <h2 className="font-extralight">
+                    FOLLOW US ON INSTAGRAM
+                </h2>
 
+                <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
+                    <p className='text-2xl italic hover:underline hover:text-blue-600 font-extralight'>
+                        @Festivida
+                    </p>
+                </a>
+
+            </div>
 
     </>
 

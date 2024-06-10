@@ -5,7 +5,6 @@ import corporate from "../assets/corporate.jpg";
 import wedding from "../assets/wedding.jpg";
 import concert from "../assets/concert.jpg";
 import videography from "../assets/videograpy.jpg";
-import cellular from "../assets/cellular.jpg";
 import trade from "../assets/trade-fair.jpg";
 import birthday from "../assets/birthday.jpg";
 import meeting from "../assets/meeting.jpg";
@@ -31,9 +30,9 @@ const Service = () => {
 
             <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-10 mb-20 pb-5 lg:pt-10 xl:pt-10'>
 
-                <h2 className='mb-10'>
+                <h1 className='mb-10'>
                     SERVICES
-                </h2>
+                </h1>
 
                 <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2'>
                     welcome to Festivida, where every occasion becomes a cherished
@@ -66,9 +65,9 @@ const Service = () => {
                 id="corporate" >
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             CORPORATE EVENTS
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -88,15 +87,15 @@ const Service = () => {
 
             <div
                 className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
-                 id="wedding" >
+                id="wedding" >
                 <div className=' flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/3 w-full '>
                         <img src={wedding} alt="" />
                     </div>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             WEDDINGS
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -113,12 +112,12 @@ const Service = () => {
 
             <div
                 className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
-                 id="concert" >
+                id="concert" >
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             CONCERT
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -137,16 +136,16 @@ const Service = () => {
 
 
             <div
-                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10" 
+                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
                 id="videography">
                 <div className=' flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/3 w-full '>
                         <img src={videography} alt="" />
                     </div>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             PHOTO & VIDEOGRAPHY
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -162,13 +161,13 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10" 
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
                 id="award">
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             AWARD CEREMONY
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -187,16 +186,16 @@ const Service = () => {
 
 
             <div
-                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10" 
+                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
                 id="trade">
                 <div className=' flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/3 w-full '>
                         <img src={trade} alt="" />
                     </div>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             TRADE FAIR
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -212,13 +211,13 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10" 
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
                 id="birthday">
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             BIRTHDAY CELEBRATION
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -237,16 +236,16 @@ const Service = () => {
 
 
             <div
-                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10" 
+                className="relative flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10"
                 id='meeting'>
                 <div className=' flex lg:flex-row flex-col gap-5 justify-between'>
                     <div className='lg:w-1/3 w-full '>
                         <img src={meeting} alt="" />
                     </div>
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             BUSINESS CONFERENCE
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -306,9 +305,9 @@ const Service = () => {
                 <div onClick={handleEmailClick} className='flex items-center gap-2 cursor-pointer'>
                     <CgMail size={35} />
 
-                    <p className='text-2xl'>
+                    <h3 className='font-extralight text-xl'>
                         Festivida74@Gmail.com
-                    </p>
+                    </h3>
 
                 </div>
             </div>
@@ -368,9 +367,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             CORPORATE EVENTS
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -395,9 +394,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             WEDDINGS
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -422,9 +421,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             CONCERT
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -449,11 +448,11 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             PHOTO &
                             <br />
                             VIDEOGRAPHY
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -479,9 +478,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             AWARD CEREMONY
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -509,9 +508,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             BIRTHDAY CELEBRATION
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -539,9 +538,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             BUSINESS CONFERENCE
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -569,9 +568,9 @@ const Service = () => {
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
                     <div className='lg:w-1/2 w-full'>
-                        <h1 className='pb-5'>
+                        <h2 className='pb-5'>
                             TRADE FAIR
-                        </h1>
+                        </h2>
                         <p className='md:text-xl text-justify flex-wrap text-wrap'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
@@ -642,10 +641,6 @@ const Service = () => {
                 </div> */}
 
             </div>
-
-
-
-
 
             <div className='bottom-0'>
                 <Footer />

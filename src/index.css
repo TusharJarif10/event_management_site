@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   @apply bg-gradient-to-b from-[#ffffff] to-[#c9eaf3]
 }
 
@@ -13,13 +13,12 @@ h1{
 
 
 h2{
-  @apply text-4xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-3xl
+  @apply text-4xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-3xl font-extralight
 }
 
 .active-link {
-  font-weight: bold;
   color: rgb(255, 255, 255) ;
-  background:#2179A9;
+  background:#0e378f;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
