@@ -225,13 +225,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div id="insta" className="my-10 pt-10 pb-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-                <h2 className="font-extralight">
+      <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                <h2 className='px-5 text-center text-balance font-extralight'>
                     FOLLOW US ON INSTAGRAM
                 </h2>
 
                 <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
-                    <p className='text-2xl italic hover:underline hover:text-blue-600 font-extralight'>
+                    <p className='text-2xl font-extralight italic hover:text-blue-500'>
                         @Festivida
                     </p>
                 </a>
