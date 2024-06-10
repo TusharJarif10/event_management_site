@@ -26,7 +26,7 @@ const Portfolio = () => {
                     PORTFOLIO
                 </h1>
 
-                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2'>
+                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight'>
                     welcome to Festivida, where every occasion becomes a cherished
                     memory. We specialize in creating bespoke events tailored to your
                     vision, offering a comprehensive range of services including
@@ -71,12 +71,15 @@ const Portfolio = () => {
                 <div onClick={handleEmailClick} className='flex items-center gap-2 cursor-pointer'>
                     <CgMail size={35} />
 
-                    <p className='text-2xl'>
+                    <h3 className='font-extralight text-xl'>
                         Festivida74@Gmail.com
-                    </p>
+                    </h3>
 
                 </div>
             </div>
+
+
+
 
             <Footer />
         </>

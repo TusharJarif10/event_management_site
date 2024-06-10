@@ -34,7 +34,7 @@ const Service = () => {
                     SERVICES
                 </h1>
 
-                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2'>
+                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight'>
                     welcome to Festivida, where every occasion becomes a cherished
                     memory. We specialize in creating bespoke events tailored to your
                     vision, offering a comprehensive range of services including
@@ -68,7 +68,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             CORPORATE EVENTS
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -96,7 +96,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             WEDDINGS
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -118,7 +118,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             CONCERT
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -146,7 +146,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             PHOTO & VIDEOGRAPHY
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -168,7 +168,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             AWARD CEREMONY
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -196,7 +196,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             TRADE FAIR
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -218,7 +218,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             BIRTHDAY CELEBRATION
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -246,7 +246,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             BUSINESS CONFERENCE
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -370,7 +370,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             CORPORATE EVENTS
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -397,7 +397,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             WEDDINGS
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -424,7 +424,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             CONCERT
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -453,7 +453,7 @@ const Service = () => {
                             <br />
                             VIDEOGRAPHY
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -481,7 +481,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             AWARD CEREMONY
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -511,7 +511,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             BIRTHDAY CELEBRATION
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -541,7 +541,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             BUSINESS CONFERENCE
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
@@ -571,7 +571,7 @@ const Service = () => {
                         <h2 className='pb-5'>
                             TRADE FAIR
                         </h2>
-                        <p className='md:text-xl text-justify flex-wrap text-wrap'>
+                        <p className='md:text-xl text-justify flex-wrap text-wrap font-extralight'>
                             elcome to Festivida, where every occasion becomes a cherished
                             memory. We specialize in creating bespoke events tailored to your
                             vision, offering a comprehensive range of services including
