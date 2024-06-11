@@ -332,11 +332,11 @@ const Service = () => {
 
             <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-10 mb-20 pb-5 md:pt-10'>
 
-                <h2 className='mb-10 lg:mb-20 xl:mb-20 md:mb-16'>
+                <h1 className='mb-10 lg:mb-20 xl:mb-20 md:mb-16'>
                     SERVICES
-                </h2>
+                </h1>
 
-                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2'>
+                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight'>
                     welcome to Festivida, where every occasion becomes a cherished
                     memory. We specialize in creating bespoke events tailored to your
                     vision, offering a comprehensive range of services including
