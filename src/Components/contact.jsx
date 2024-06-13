@@ -105,7 +105,7 @@ function Contact() {
                         <div className="md:flex items-center mt-5">
                             <div className="md:w-72 flex flex-col">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setEmail(e.target.value)} required  className="text-base leading-none
+                                <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setBudget(e.target.value)} required  className="text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="BUDGET*" />
                             </div>
