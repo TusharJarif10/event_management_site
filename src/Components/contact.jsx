@@ -48,7 +48,7 @@ function Contact() {
             setMobile('');
             setEmail('');
             setGuest('');
-            setBudget(0);
+            setBudget('');
             setDate('');
             setDetails('');
            
