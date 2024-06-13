@@ -110,7 +110,7 @@ function Contact() {
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="BUDGET*" />
                             </div>
                             <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                                <label className="text-sm font-extralight leading-none text-gray-800">(OPTIONAL)</label>
+                                <label className="text-sm font-extralight leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="date" name="event_date" value={date} onChange={(e) => setDate(e.target.value)} required  className="text-base leading-none
                              text-gray-400 p-3 focus:oultine-none focus:border-indigo-700 mt-1
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EVENT DATE*" />
