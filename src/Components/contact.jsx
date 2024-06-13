@@ -1,61 +1,102 @@
 import { useRef } from "react";
-import emailjs from '@emailjs/browser';
-import { Button } from "@mui/material";
+import axios from 'axios';
+import { useState } from "react";
+
 
 function Contact() {
     //const [show, setShow] = useState(false);
 
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const [username, setUsername] = useState('');
+    const [mobile, setMobile] = useState('');
+    const [email, setEmail] = useState('');
+    const [guest, setGuest] = useState('');
+    const [budget, setBudget] = useState();
+    const [date, setDate] = useState('');
+    const [details, setDetails] = useState('');
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_76rkata', 'template_k45twpd', form.current, '2BYNTyQuI7AkqPAQf')
-            .then((result) => {
-                console.log(result.text);
-                console.log("message sent");
-            },
-                (error) => {
-                    console.log(error.text);
-                });
-    };
+        //your emailjs information
+        const serviceId = 'service_117ximo';
+        const templateId = 'template_67dwvav';
+        const publicKey = 'yOSb0j9NhfIDcblIn';
+
+        //create a object that contains dynamic template params
+        const data = {
+            service_id: serviceId,
+            template_id: templateId,
+            user_id: publicKey,
+            template_params: {
+                user_name: username,
+                phone_number: mobile,
+                user_email: email,
+                guest_count: guest,
+                budget: budget,
+                event_date: date,
+                message: details
+               
+            }
+        };
+
+        try {
+            const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
+            console.log(res.data);
+            setUsername('');
+            setMobile('');
+            setEmail('');
+            setGuest('');
+            setBudget(0);
+            setDate('');
+            setDetails('');
+           
+            alert('order placed successfully');
+        } catch (error) {
+            console.error(error);
+            alert('something went wrong');
+        }
+    }
 
     return (
         <>
-
 
             <div className="my-10">
 
                 <div className="">
 
-                    <form ref={form} onSubmit={sendEmail} className="">
+                    <form ref={form} onSubmit={handleSubmit} className="">
 
 
                         <div className="md:flex items-center">
                             <div className="md:w-72 flex flex-col">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="text" name="user_name" className="text-base leading-none
+                                <input tabIndex={0} type="text" name="user_name" value={username} onChange={(e) => setUsername(e.target.value)} required className="text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="NAME*" />
                             </div>
+
                             <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="email" name="user_email" className="text-base leading-none
+                                <input tabIndex={0} type="tel" name="phone_number" value={mobile} onChange={(e) => setMobile(e.target.value)} required className="text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EMAIL*" />
+                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="PHONE NUMBER*" />
                             </div>
+
                         </div>
 
                         <div className="md:flex items-center mt-5">
                             <div className="md:w-72 flex flex-col">
-                                <label className="text-base font-semibold leading-none text-gray-400"></label>
-                                <input tabIndex={0} type="date" name="event_date" className="text-base leading-none
-                             text-gray-400 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EVENT DATE*" />
+                                <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                <input tabIndex={0} type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} required className="text-base leading-none
+                             text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
+                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EMAIL*" />
                             </div>
+
                             <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="number" name="guest_count" className="text-base leading-none
+                                <input tabIndex={0} type="number" name="guest_count" value={guest} onChange={(e) => setGuest(e.target.value)} required  className="text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="GUEST COUNT*" />
                             </div>
@@ -64,16 +105,17 @@ function Contact() {
                         <div className="md:flex items-center mt-5">
                             <div className="md:w-72 flex flex-col">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="number" name="budget" className="text-base leading-none
+                                <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setEmail(e.target.value)} required  className="text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="BUDGET*" />
                             </div>
                             <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="tel" name="phone_number" className="text-base leading-none
-                             text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="PHONE NUMBER*" />
+                                <label className="text-sm font-extralight leading-none text-gray-800">(OPTIONAL)</label>
+                                <input tabIndex={0} type="date" name="event_date" value={date} onChange={(e) => setDate(e.target.value)} required  className="text-base leading-none
+                             text-gray-400 p-3 focus:oultine-none focus:border-indigo-700 mt-1
+                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EVENT DATE*" />
                             </div>
+
                         </div>
                         {/* <div className="md:flex items-center mt-8">
                         <div className="md:w-72 flex flex-col">
@@ -88,9 +130,12 @@ function Contact() {
                         <div>
                             <div className="w-full flex flex-col mt-8">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <textarea tabIndex={0} role="textbox" type="text" name="message" className="h-36 text-base leading-none
+                                <textarea tabIndex={0} role="textbox" type="text" name="message" value={details} 
+                                onChange={(e) => setDetails(e.target.value)} required  
+                                className="h-36 text-base leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400 resize-none" placeholder="TELL US ABOUT YOUR EVENT PLEASE*" />
+                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400 resize-none" 
+                              placeholder="TELL US ABOUT YOUR EVENT PLEASE*" />
                                 {/* <input type="submit" value="Send" /> */}
                             </div>
                         </div>
