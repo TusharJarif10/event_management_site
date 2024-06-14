@@ -2,14 +2,11 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 import fes from "../assets/festivida.png";
-import { ButtonBase } from "@mui/material";
 import { NavLink, useLocation } from 'react-router-dom';
-import { RiInstagramFill } from "react-icons/ri";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { PiInstagramLogoDuotone, PiWhatsappLogoDuotone, PiFacebookLogoDuotone   } from "react-icons/pi";
+import { FiFacebook } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
-
-
+import { BsBackspace } from "react-icons/bs";
 
 export default function Navbar() {
 
@@ -73,12 +70,12 @@ export default function Navbar() {
               <li>
                 <div className="pl-20">
                   <Link to="/contact">
-                  <button className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
-                  <HashLink smooth to='/#contact'>CONTACT NOW</HashLink>
-                    
-                  </button>
+                    <button className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
+                      <HashLink slot to='/#contact'>CONTACT NOW</HashLink>
+
+                    </button>
                   </Link>
-                  
+
                 </div>
 
               </li>
@@ -86,15 +83,19 @@ export default function Navbar() {
 
 
 
-            <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-6">
+            <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-4">
 
 
-              <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
+              <div className="hidden lg:flex items-center space-x-4 xl:space-x-4">
 
-                <FaFacebook size={30} color='#2179A9'/>
-                <RiInstagramFill size={32} color='#2179A9'/>
-                <IoLogoWhatsapp size={32} color='#034A9F'/>
+             <a href="https://www.facebook.com/FestiVidaE">
+             <PiFacebookLogoDuotone size={32} color='#535ce6' />
+             </a>
               
+                <HashLink slot to='/#insta'> <PiInstagramLogoDuotone size={30} color='#535ce6' /> </HashLink>
+              
+                <PiWhatsappLogoDuotone size={32} color='green' />
+
 
               </div>
               <div className="flex lg:hidden">
@@ -119,57 +120,62 @@ export default function Navbar() {
 
 
         {/* For small screen */}
-        <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-[#F7FDFF] z-10 inset-0 md:hidden bg-yellow-300 flex-col h-screen w-full`}>
+        <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"}  z-10 inset-0 md:hidden bg-gradient-to-b from-[#ffffff] to-[#c9eaf3] flex-col h-auto w-auto`}>
           <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
 
             <button onClick={() => setShowMenu(false)} aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
-              <svg className="fill-stroke text-gray-800 dark:text-[#596196]" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4L4 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M4 4L12 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            
+            <BsBackspace color='gray' size={28} />
+              
             </button>
           </div>
           <div className="mt-6 p-4">
             <ul className="flex flex-col space-y-6">
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196] flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Home
+                <a href="javascript:void(0)" className="text-[#535ce6] flex items-center justify-between hover:font-bold text-md hover:text-xl ">
+                  <Link to="/" onClick={() => setShowMenu(false)}>
+                    HOME
+                  </Link>
                   <div>
-                    <svg className="fill-stroke text-black dark:text-[#596196]" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="fill-stroke text-gray-700" width={16} height={16} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196] flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Service
+                <a href="javascript:void(0)" className="text-[#535ce6] flex items-center justify-between hover:font-bold text-md hover:text-xl  ">
+
+                  <Link to="/service" onClick={() => setShowMenu(false)}>
+                    SERVICES
+                  </Link>
+
                   <div>
-                    <svg className="fill-stroke text-black dark:text-[#596196]" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="fill-stroke text-gray-700" width={16} height={16} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196] flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Lookbook
+                <a href="javascript:void(0)" className="text-[#535ce6] flex items-center justify-between hover:font-bold text-md hover:text-xl ">
+                  <Link to="/portfolio" onClick={() => setShowMenu(false)}>
+                    PORTFOLIO
+                  </Link>
+
                   <div>
-                    <svg className="fill-stroke text-black dark:text-[#596196]" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="fill-stroke text-gray-700" width={16} height={16} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0)" className="dark:text-[#596196] flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
-                  Contact
-                  <div>
-                    <svg className="fill-stroke text-black dark:text-[#596196]" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                </a>
+                <button
+                  className={"text-md px-2 py-1 rounded-md bg-card-foreground tracking-tighter bg-blue-500 text-white"}
+                >
+                  <HashLink smooth to='/#contact'>CONTACT</HashLink>
+                </button>
               </li>
             </ul>
           </div>

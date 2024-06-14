@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import '../style/Carousel.css';
 
@@ -52,4 +53,5 @@ export default function Carousel({images}) {
         
     </div>
   )
+
 }
