@@ -10,7 +10,7 @@ export default function Carousel({images}) {
 
     useEffect ( ()=>
     {
-        setTimeout( ()=> {slideRight()}, 3000)
+        setTimeout( ()=> {slideRight()}, 3500)
     }) 
     const slideRight = () => {
         if (current===images.length-1)
