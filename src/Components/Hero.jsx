@@ -12,8 +12,8 @@ import Contact from '../Components/contact';
 import { Button } from '@mui/material';
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-
-
+import Carousel from "./Carousel";
+import { countries } from './Data';
 
 // import { useNavigate } from 'react-router-dom';
 
@@ -26,23 +26,19 @@ const Hero = () => {
 
       <div
         className="relative flex flex-col lg:flex-row px-4 mx-4 sm:px-8 md:px-12
-               lg:px-20 xl:px-48 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
+               lg:px-10 xl:px-20 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
       >
         {/* text-container */}
-        <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-2/4 gap-8 items-center justify-center px-2">
+        <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6 items-center justify-center px-2">
           {/* title */}
-          <h1 className="uppercase">Unforgotable Events</h1>
+          <h1 className="uppercase ">Unforgotable Events</h1>
           {/* desc */}
           <p className="md:text-xl text-justify flex-wrap text-wrap font-extralight">
             Welcome to Festivida, where every occasion becomes a cherished
             memory. We specialize in creating bespoke events tailored to your
             vision, offering a comprehensive range of services including
             exquisite decoration, seamless documentation, stunning photo and
-            videography, reliable transportation, and delectable catering. Our
-            dedicated team is committed to ensuring your event is flawlessly
-            executed from start to finish, leaving you free to savor every
-            moment. Let us turn your dreams into reality with unparalleled
-            expertise and a personal touch. Explore our services and discover
+            videography, reliable transportation, and delectable catering. Explore our services and discover
             how we can make your next event truly unforgettable.
           </p>
           {/* button */}
@@ -65,14 +61,12 @@ const Hero = () => {
         </div>
 
         {/* image-container */}
-        <div className={"h-1/2 lg:h-full lg:w-1/2 relative lg:pl-20 xl:pl-20 lg:mt-20 xl:mt-20 pt-10 lg:pt-0"}>
-          <img
-            src={cellular}
-            alt="hero"
-            width={600}
-            className="object-contain"
-          />
+        <div className={"h-1/2 lg:h-full lg:w-2/3 relative lg:pl-10 xl:pl-10   "}>
+         <Carousel images = {countries} />
         </div>
+
+
+
         {/* <div className={"h-1/2 lg:h-full lg:w-1/2 relative cursor-pointer lg:mt-20 xl:mt-20"} >
           <EmblaCarousel />
         </div> */}
@@ -244,5 +238,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
