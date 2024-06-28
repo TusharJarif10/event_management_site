@@ -20,7 +20,7 @@ function About() {
   const missionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful. ";
   const visionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful.  ";
   const promiseContent =
-    "We promise reliability and excellence in our services...";
+    "To excel in event planning, focus on building strong client relationships by understanding their unique needs and tailoring events accordingly. Stay informed about industry trends and customer preferences to offer innovative solutions. Diversify your services to cover all aspects of event planning, maintain positive vendor relationships, invest in staff training, and incorporate sustainability practices to appeal to environmentally conscious clients and attendees.";
   const whyCompanyContent = [
     {
       icon: (
@@ -32,8 +32,8 @@ function About() {
           <path d="M10 3L8.59 4.41 14.17 10H3v2h11.17l-5.59 5.59L10 17l7-7-7-7z" />
         </svg>
       ),
-      title: "Quality Services",
-      detail: "We ensure top-notch service quality...",
+      title: "Experienced Team",
+      detail: "Our team of professionals brings extensive experience and expertise to every event. We have the ability to perform well under pressure and remain calm in crisis situation. We ensure that every aspect of an event is perfect.",
     },
     {
       icon: (
@@ -45,8 +45,8 @@ function About() {
           <path d="M15 3h-4V1H9v2H5c-1.11 0-2 .89-2 2v14l7-3.5L17 19V5c0-1.11-.89-2-2-2zm0 12.5l-5-2.5-5 2.5V5h10v10.5z" />
         </svg>
       ),
-      title: "Customer Satisfaction",
-      detail: "Our priority is to keep our customers happy...",
+      title: "Customized Solutions",
+      detail: "We offer personalized event solutions to meet the unique needs of each client. We have the ability to multitask, as the job often requires dealing with multiple parties and tasks concurrently.",
     },
     {
       icon: (
@@ -58,12 +58,27 @@ function About() {
           <path d="M6 2h8l4 4v10c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2V4c0-1.11.89-2 2-2zm2 2H4v10h12V7h-5V2H8v2z" />
         </svg>
       ),
-      title: "Innovative Solutions",
-      detail: "We provide innovative solutions tailored to your needs...",
+      title: "Commitment to Excellence",
+      detail: "We are dedicated to delivering high-quality events that leave a lasting impression.",
+    },
+    {
+      icon: (
+        <svg
+          className="w-6 h-6 fill-current text-blue-500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+<path d="M9 12L11 14L15 9.99999M20 12C20 16.4611 14.54 19.6937 12.6414 20.683C12.4361 20.79 12.3334 20.8435 12.191 20.8712C12.08 20.8928 11.92 20.8928 11.809 20.8712C11.6666 20.8435 11.5639 20.79 11.3586 20.683C9.45996 19.6937 4 16.4611 4 12V8.21759C4 7.41808 4 7.01833 4.13076 6.6747C4.24627 6.37113 4.43398 6.10027 4.67766 5.88552C4.9535 5.64243 5.3278 5.50207 6.0764 5.22134L11.4382 3.21067C11.6461 3.13271 11.75 3.09373 11.857 3.07827C11.9518 3.06457 12.0482 3.06457 12.143 3.07827C12.25 3.09373 12.3539 3.13271 12.5618 3.21067L17.9236 5.22134C18.6722 5.50207 19.0465 5.64243 19.3223 5.88552C19.566 6.10027 19.7537 6.37113 19.8692 6.6747C20 7.01833 20 7.41808 20 8.21759V12Z" stroke="#FFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+        </svg>
+      ),
+      title: "Professionalism",
+      detail: "Experienced and dedicated team of event planners. Strong negotiation skills to effectively deal with suppliers and contractors.",
     },
   ];
   const topManagement = [
-    { name: "John Doe", position: "CxO", img: birthday},
+    { name: "John Doe", position: "CEO", img: birthday},
     { name: "Jane Smith", position: "CTO", img: meeting },
   ];
 
