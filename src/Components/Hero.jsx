@@ -14,32 +14,37 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import { countries } from './Data';
+import Location from '../Components/Location';
+import AOS from "aos";
+import ScrollTop from '../Components/ScrolltoTop';
+import { useEffect } from "react";
 
 // import { useNavigate } from 'react-router-dom';
 
 
 const Hero = () => {
   // const navigate = useNavigate();
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
 
       <div
-        className="relative flex flex-col lg:flex-row px-4 mx-4 sm:px-8 md:px-12
-               lg:px-10 xl:px-20 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
+        className="relative flex flex-row items-center lg:justify-between xl:justify-between max-w-screen-2xl mx-auto
+         justify-center flex-wrap text-wrap mt-10"
       >
         {/* text-container */}
-        <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6 items-center justify-center px-2">
+        <div className="h-2/3 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6
+         items-center justify-center lg:mx-6 xl:mx-6 px-2 mx-2">
           {/* title */}
-          <h1 className="uppercase ">Unforgotable Events</h1>
+          <h1 className="uppercase" data-aos="fade-up" >Unforgotable Events</h1>
           {/* desc */}
-          <p className="md:text-xl text-justify flex-wrap text-wrap font-extralight">
-            Welcome to Festivida, where every occasion becomes a cherished
-            memory. We specialize in creating bespoke events tailored to your
-            vision, offering a comprehensive range of services including
-            exquisite decoration, seamless documentation, stunning photo and
-            videography, reliable transportation, and delectable catering. Explore our services and discover
-            how we can make your next event truly unforgettable.
+          <p className="text-2xl text-justify" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            Festivida is a premier event management company located in Dhaka, Bangladesh, dedicated to creating unforgettable experiences through meticulously planned and flawlessly executed events all through bangladesh. With a passion for innovation and a commitment to excellence, Festivida has established itself as a trusted name in the event management industry.
           </p>
           {/* button */}
           <div className={"w-full flex gap-4 mt-3"}>
@@ -51,18 +56,23 @@ const Hero = () => {
         </Button> */}
             <button
 
-              className={"text-lg px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
-
+              className={"text-xl px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 font-bold tracking-wider text-white"}
+data-aos="zoom-in" 
             >
-               <HashLink slot to='/#contact'>GET STARTED</HashLink>
-              
+              <HashLink slot to='/#contact'>GET STARTED</HashLink>
+
             </button>
           </div>
         </div>
 
         {/* image-container */}
-        <div className={"h-1/2 lg:h-full lg:w-2/3 relative lg:pl-10 xl:pl-10   "}>
-         <Carousel images = {countries} />
+        <div className={"h-1/2 lg:h-full lg:w-1/2 mr-20 relative cursor-pointer lg:mt-20 xl:mt-20" }
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+        >
+          <Carousel images={countries} />
         </div>
 
 
@@ -74,10 +84,12 @@ const Hero = () => {
       </div>
 
       <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-        <h2 className="w-5/6 px-2 mx-2 flex items-center justify-center">
+        <h2 className=" px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
-        <p className="w-5/6 md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight">
+        <p className=" text-justify flex-wrap text-wrap px-2 text-2xl max-w-screen-2xl mx-auto" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
           We are a full service international event planning and design studio
           based in Miami, Florida. Global clients seek our services to plan,
           design, and produce their special events, not only in South Florida,
@@ -89,148 +101,159 @@ const Hero = () => {
       <div className="mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
+          <div className="mt-10 grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
 
-            <div className=" w-full h-full relative flex justify-center items-center ">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={corporate} alt="corporate-event" />
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="meeting" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
-                  CORPORATE EVENTS
+                  Corporate Events
                 </h2>
 
                 {/* <button className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
                       <HashLink slot to='/#contact'>CONTACT NOW</HashLink>
 
                     </button> */}
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#corporate'>Learn More</HashLink>
                 </button>
               </div>
 
             </div>
 
 
-            <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="weddings" />
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold'>
-                  WEDDINGS
+                <h2 className='text-[#ffffff] text-center font-extrabold '>
+                  Entertainment Event
                 </h2>
                 <Link to={"/service"}>
 
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#wedding'>LEARN MORE</HashLink>
-                </button>
-             
+                  <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                    <HashLink slot to='/service/#entertainment'>Learn More</HashLink>
+                  </button>
+
                 </Link>
               </div>
 
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={concert} alt="concert" />
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="wedding" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold'>
-                  CONCERT
+                <h2 className='text-[#ffffff] text-center font-extrabold '>
+                  Social Event
+
                 </h2>
-                
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
+
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#socialevent'>Learn More</HashLink>
                 </button>
               </div>
 
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
-                  PHOTO &
+                  Marketing &
                   <br />
-                  VIDEOGRAPHY
+                  Promotion
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#videography'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#marketing'>Learn More</HashLink>
                 </button>
-                
+
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
-                  AWARD CEREMONY
+                  Post-Event Analysis
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#award'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#postevent'>Learn More</HashLink>
                 </button>
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
-                  TRADE FAIR
+                  Trade Fair
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#trade'>Learn More</HashLink>
                 </button>
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
-                  BIRTHDAY CELEBRATION
+                  Photo &  <br />
+                  Videography
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#birthday'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#photo'>Learn More</HashLink>
                 </button>
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center ">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={meeting} alt="business" />
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-left" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={concert} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold '>
-                  BUSINESS CONFERENCE
+                  Concert
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
-                <HashLink slot to='/service/#meeting'>LEARN MORE</HashLink>
+                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
+                  <HashLink slot to='/service/#concert'>Learn More</HashLink>
                 </button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
-        
 
-      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20" id="contact">
+
+      <div className="mt-5 pt-5 flex flex-col items-center justify-center 
+      flex-wrap text-wrap gap-4 lg:px-20 xl:px-20" id="contact">
         <h2>
           GET IN TOUCH
         </h2>
-        <p className="w-5/6 lg:w-3/6 xl:w-3/6 md:text-xl text-center flex-wrap text-wrap px-2 mx-2 font-extralight">
-          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at Festivida74@Gmail.com or by phone at 305-298-4618.
+        <p className="text-2xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center">
+          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at Festivida74@Gmail.com.
         </p>
-        <div className="flex flex-wrap justify-center items-center" >
+        <div className=" flex flex-wrap justify-center items-center" >
           <Contact />
         </div>
       </div>
 
-      <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-                <h2 className='px-5 text-center text-balance font-extralight'>
-                    FOLLOW US ON INSTAGRAM
-                </h2>
+      <div>
+        <Location />
+      </div>
 
-                <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
-                    <p className='text-2xl font-extralight italic hover:text-blue-500'>
-                        @Festivida
-                    </p>
-                </a>
+      {/* <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+        <h2 className='px-5 text-center text-balance '>
+          FOLLOW US ON INSTAGRAM
+        </h2>
 
-            </div>
+        <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
+          <p className='text-4xl font-extralight italic hover:text-blue-500'>
+            @Festivida
+          </p>
+        </a>
+      </div> */}
+
+
+      <div className="max-w-screen-2xl mx-auto my-10">
+        <ScrollTop />
+      </div>
+
 
     </>
 

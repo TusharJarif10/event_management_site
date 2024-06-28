@@ -3,33 +3,41 @@
 @tailwind utilities;
 
 body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: Arial, Helvetica, sans-serif,
   @apply bg-gradient-to-b from-[#ffffff] to-[#c9eaf3]
 }
 
 h1{
-  @apply text-5xl lg:text-5xl xl:text-6xl md:text-3xl sm:text-3xl font-extralight 
+  @apply text-5xl lg:text-5xl xl:text-6xl md:text-3xl sm:text-3xl font-semibold text-gray-600
 }
 
-
 h2{
-  @apply text-4xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-3xl font-extralight
+  @apply text-4xl lg:text-4xl xl:text-5xl md:text-3xl sm:text-3xl font-semibold text-gray-600
 }
 
 .active-link {
   color: rgb(255, 255, 255) ;
-  background:#0e378f;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 15px;
+  background:#3c80fe;
+  padding: 4px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 12px;
+  font-size: larger;
 }
 
 .inactive-link{
-  font-weight: lighter;
-  font-size: large;
+  font-size:  larger;
+ 
 }
 
+.inactive-link:hover{
+  background:#dde4eb;
+  padding: 4px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 12px;
+  font-weight: 600;
+}
 
 
          

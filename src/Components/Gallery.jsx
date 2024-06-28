@@ -6,7 +6,7 @@ export default function Gallery() {
 		<>
 
 			<section className="">
-				<div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-3">
+				<div className="py-4 mx-auto max-w-screen-2xl sm:py-4">
 
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 

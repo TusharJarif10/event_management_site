@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { ThemeProvider } from '@mui/material'
 import { theme } from './theme.jsx'
+import "aos/dist/aos.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
