@@ -14,15 +14,24 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import { countries } from './Data';
+import { useEffect } from "react";
+
+import AOS from "aos";
+
 
 
 
 // import { useNavigate } from 'react-router-dom';
 
 
+
+
 const Hero = () => {
   // const navigate = useNavigate();
-
+  
+  useEffect(() => {
+    AOS.init();
+ }, []);
   return (
     <>
 
@@ -31,11 +40,11 @@ const Hero = () => {
                lg:px-10 xl:px-20 mt-20 mb-20 pb-10 lg:pt-10 xl:pt-10 flex-wrap text-wrap"
       >
         {/* text-container */}
-        <div className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6 items-center justify-center px-2">
+        <div  className="h-1/2 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6 items-center justify-center px-2">
           {/* title */}
-          <h1 className="uppercase ">Unforgotable Events</h1>
+          <h1 className="uppercase " data-aos="fade-up">Unforgotable Events</h1>
           {/* desc */}
-          <p className="md:text-xl text-justify flex-wrap text-wrap font-extralight">
+          <p className="md:text-xl text-justify flex-wrap text-wrap font-extralight" data-aos="fade-down">
             Welcome to Festivida, where every occasion becomes a cherished
             memory. We specialize in creating bespoke events tailored to your
             vision, offering a comprehensive range of services including
@@ -51,12 +60,12 @@ const Hero = () => {
         >
           View Our Work
         </Button> */}
-            <button
+            <button  data-aos="zoom-in"
 
               className={"text-lg px-7 py-2 rounded-full bg-card-foreground tracking-tighter bg-blue-900 text-white"}
 
             >
-               <HashLink slot to='/#contact'>GET STARTED</HashLink>
+               <HashLink  slot to='/#contact'>GET STARTED</HashLink>
               
             </button>
           </div>
@@ -72,7 +81,7 @@ const Hero = () => {
 
       </div>
 
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+      <div data-aos="fade-down" className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
         <h2 className="w-5/6 px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
@@ -90,9 +99,9 @@ const Hero = () => {
 
           <div className="mt-10 grid lg:grid-cols-2  items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
 
-            <div className=" w-full h-full relative flex justify-center items-center ">
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={corporate} alt="corporate-event" />
-              <div className="absolute flex justify-center items-center flex-col gap-2">
+              <div className="absolute flex justify-center items-center flex-col gap-2"  >
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
                   CORPORATE EVENTS
                 </h2>
@@ -109,9 +118,9 @@ const Hero = () => {
             </div>
 
 
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="weddings" />
-              <div className="absolute flex justify-center items-center flex-col gap-2">
+              <div className="absolute flex justify-center items-center flex-col gap-2" >
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
                   WEDDINGS
                 </h2>
@@ -126,7 +135,7 @@ const Hero = () => {
 
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={concert} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
@@ -140,7 +149,7 @@ const Hero = () => {
 
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold'>
@@ -148,13 +157,13 @@ const Hero = () => {
                   <br />
                   VIDEOGRAPHY
                 </h2>
-                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full">
+                <button  className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
                 <HashLink slot to='/service/#videography'>LEARN MORE</HashLink>
                 </button>
                 
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
@@ -165,7 +174,7 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center"data-aos="fade-left">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
@@ -176,7 +185,7 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center">
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
@@ -188,7 +197,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center ">
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-left">
               <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={meeting} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-extrabold '>
@@ -206,7 +215,7 @@ const Hero = () => {
 
         
 
-      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20" id="contact">
+      <div className="mt-5 pt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20" id="contact" data-aos="flip-right">
         <h2>
           GET IN TOUCH
         </h2>
