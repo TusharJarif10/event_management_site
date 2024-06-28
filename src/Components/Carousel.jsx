@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../style/Carousel.css';
 
 export default function Carousel({images}) {
@@ -10,7 +10,7 @@ export default function Carousel({images}) {
 
     useEffect ( ()=>
     {
-        setTimeout( ()=> {slideRight()}, 2500)
+        setTimeout( ()=> {slideRight()}, 3000)
     }) 
     const slideRight = () => {
         if (current===images.length-1)
@@ -39,8 +39,8 @@ export default function Carousel({images}) {
                             <div className='card_overlay'>
                                 <h2 className='card_title'>{images.title}</h2>
                             </div>
-                            <div className="carousel_arrow_left" onClick={slideLeft}>&lsaquo;</div>
-                            <div className="carousel_arrow_right" onClick={slideRight}>&rsaquo;</div>
+                            {/* <div className="carousel_arrow_left" onClick={slideLeft}>&lsaquo;</div>
+                            <div className="carousel_arrow_right" onClick={slideRight}>&rsaquo;</div> */}
                         </div>
                         
                         )

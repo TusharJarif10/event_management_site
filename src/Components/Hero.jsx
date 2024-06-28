@@ -19,8 +19,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 
-
-
 // import { useNavigate } from 'react-router-dom';
 
 
@@ -72,9 +70,12 @@ const Hero = () => {
         </div>
 
         {/* image-container */}
-        <div className={"h-1/2 lg:h-full lg:w-2/3 relative lg:pl-20 xl:pl-20   "}>
+        <div className={"h-1/2 lg:h-full lg:w-2/3 relative lg:pl-10 xl:pl-10   "}>
          <Carousel images = {countries} />
         </div>
+
+
+
         {/* <div className={"h-1/2 lg:h-full lg:w-1/2 relative cursor-pointer lg:mt-20 xl:mt-20"} >
           <EmblaCarousel />
         </div> */}
@@ -97,7 +98,7 @@ const Hero = () => {
       <div className="mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2  items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
+          <div className="mt-10 grid lg:grid-cols-2 gap-x-4 gap-y-4 items-center lg:px-20 lg:mx-10 xl:px-22 xl:mx-12">
 
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={corporate} alt="corporate-event" />
@@ -227,13 +228,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div id="insta" className="my-10 pt-10 pb-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-                <h2 className="font-extralight">
+      <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                <h2 className='px-5 text-center text-balance font-extralight'>
                     FOLLOW US ON INSTAGRAM
                 </h2>
 
                 <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
-                    <p className='text-2xl italic hover:underline hover:text-blue-600 font-extralight'>
+                    <p className='text-2xl font-extralight italic hover:text-blue-500'>
                         @Festivida
                     </p>
                 </a>
@@ -246,5 +247,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
