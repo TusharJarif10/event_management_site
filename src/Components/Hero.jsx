@@ -215,7 +215,7 @@ const Hero = () => {
 
 
       <div className="mt-5 pt-5 flex flex-col items-center justify-center 
-      flex-wrap text-wrap gap-4 lg:px-20 xl:px-20" id="contact">
+      flex-wrap text-wrap gap-4 lg:px-20 xl:px-20" id="contact" data-aos="zoom-in" data-aos-duration="1000">
         <h2>
           GET IN TOUCH
         </h2>
@@ -227,7 +227,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto" data-aos="fade-left" data-aos-duration="1000">
         <Location />
       </div>
 
