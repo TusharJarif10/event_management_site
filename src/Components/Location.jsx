@@ -26,14 +26,14 @@ export default function Location() {
                 <div>
                     <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                         <div className="px-6 py-4">
-                            <h3 className="text-2xl font-bold text-gray-900">Our Address</h3>
-                            <p className="text-2xl text-justify flex-wrap text-wrap px-2 mx-2">460/A Road 6, Avenue 7, Mirpur DOHS, Dhaka, Bangladesh</p>
+                            <h3 className="text-lg font-bold text-gray-900">Our Address</h3>
+                            <p className="text-lg text-justify flex-wrap text-wrap px-2 mx-2">460/A Road 6, Avenue 7, Mirpur DOHS, Dhaka, Bangladesh</p>
                         </div>
                         <div className="border-t border-gray-200 px-6 py-4">
-                            <h3 className="text-2xl font-bold text-gray-900">Hours</h3>
-                            <p className="text-2xl text-justify flex-wrap text-wrap px-2 mx-2">Monday - Friday: 9am - 5pm</p>
-                            <p className="text-2xl text-justify flex-wrap text-wrap px-2 mx-2">Saturday: 10am - 4pm</p>
-                            <p className="text-2xl text-justify flex-wrap text-wrap px-2 mx-2">Sunday: Closed</p>
+                            <h3 className="text-lg font-bold text-gray-900">Hours</h3>
+                            <p className="text-lg text-justify flex-wrap text-wrap px-2 mx-2">Monday - Friday: 9am - 5pm</p>
+                            <p className="text-lg text-justify flex-wrap text-wrap px-2 mx-2">Saturday: 10am - 4pm</p>
+                            <p className="text-lg text-justify flex-wrap text-wrap px-2 mx-2">Sunday: Closed</p>
                         </div>
                       
                     </div>

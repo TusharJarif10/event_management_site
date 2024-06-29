@@ -74,14 +74,14 @@ function Contact() {
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="text" name="user_name" value={username} onChange={(e) => setUsername(e.target.value)} required className=" py-4 text-xl leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="NAME*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="NAME*" />
                             </div>
 
                             <div className="md:w-72 w-80 xl:w-[25rem] lg:w-[25rem] flex flex-col md:ml-6 md:mt-0 mt-4">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="tel" name="phone_number" value={mobile} onChange={(e) => setMobile(e.target.value)} required className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="PHONE NUMBER*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="PHONE NUMBER*" />
                             </div>
 
                         </div>
@@ -91,14 +91,14 @@ function Contact() {
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} required className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EMAIL*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="EMAIL*" />
                             </div>
 
                             <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="number" name="guest_count" value={guest} onChange={(e) => setGuest(e.target.value)} required  className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="GUEST COUNT*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="GUEST COUNT*" />
                             </div>
                         </div>
 
@@ -107,13 +107,13 @@ function Contact() {
                                 <label className="text-base font-semibold leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setBudget(e.target.value)} required  className="py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="BUDGET*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="BUDGET*" />
                             </div>
                             <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
                                 <label className="text-sm font-extralight leading-none text-gray-800"></label>
                                 <input tabIndex={0} type="date" name="event_date" value={date} onChange={(e) => setDate(e.target.value)} required  className="py-4 text-xl  leading-none
                              text-gray-400 p-3 focus:oultine-none focus:border-indigo-700 mt-1
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400" placeholder="EVENT DATE*" />
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="EVENT DATE*" />
                             </div>
 
                         </div>
@@ -134,7 +134,7 @@ function Contact() {
                                 onChange={(e) => setDetails(e.target.value)} required  
                                 className=" py-7 h-36 text-xl leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-50 border rounded border-gray-200 placeholder-gray-400 resize-none" 
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400 resize-none" 
                               placeholder="TELL US ABOUT YOUR EVENT PLEASE*" />
                                 {/* <input type="submit" value="Send" /> */}
                             </div>
@@ -142,7 +142,7 @@ function Contact() {
                         {/* <p className="text-xs leading-3 text-gray-600 mt-4">By clicking submit you agree to our terms of service, privacy policy and how we use data as stated</p> */}
                         <div className="flex items-center justify-center w-full mt-7">
 
-                            <button className="text-xl px-6 py-3 mt-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 font-bold tracking-wider text-white" type="submit" value="Send" >SEND MESSAGE</button>
+                            <button className="text-xl px-6 py-3 mt-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white" type="submit" value="Send" >SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>

@@ -29,7 +29,7 @@ const Portfolio = () => {
         <>
             <Navbar />
 
-            <div className='max-w-screen-2xl mx-auto'>
+            <div className='max-w-screen-xl mx-auto'>
                 <div className='relative flex flex-col justify-center items-center xl:pt-10 lg:pt-10 xl:mt-20 lg:mt-20'>
 
                     <h1 className='mb-10' data-aos="zoom-in-right">
@@ -46,7 +46,7 @@ const Portfolio = () => {
                 </div>
 
 
-                <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                {/* <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                     <h2>
                         GET IN TOUCH
                     </h2>
@@ -58,7 +58,7 @@ const Portfolio = () => {
 
                 <div className=" flex flex-wrap justify-center items-center">
                     <Contact />
-                </div>
+                </div> */}
 
                 <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                     <h2 className='px-5 text-center text-balance'>
@@ -100,7 +100,7 @@ const Portfolio = () => {
                 </div> */}
 
             </div>
-            <div className="max-w-screen-2xl mx-auto my-10">
+            <div className="max-w-screen-xl mx-auto my-10">
                 <ScrollTop />
             </div>
             <Footer />
@@ -130,7 +130,7 @@ const Portfolio = () => {
             <Gallery />
 
 
-            <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+            {/* <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                 <h2>
                     GET IN TOUCH
                 </h2>
@@ -142,7 +142,7 @@ const Portfolio = () => {
 
             <div className=" flex flex-wrap justify-center items-center">
                 <Contact />
-            </div>
+            </div> */}
 
             <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                 <h2 className='px-5 text-center text-balance font-extralight'>

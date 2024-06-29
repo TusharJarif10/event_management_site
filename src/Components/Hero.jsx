@@ -32,32 +32,30 @@ const Hero = () => {
     <>
 
       <div
-        className="relative flex flex-row items-center lg:justify-between xl:justify-between max-w-screen-2xl mx-auto
-         justify-center flex-wrap text-wrap mt-10"
-      >
-        {/* text-container */}
-        <div className="h-2/3 flex flex-wrap flex-col lg:h-full lg:w-1/3 gap-6
-         items-center justify-center lg:mx-6 xl:mx-6 px-2 mx-2">
-          {/* title */}
-          <h1 className="uppercase" data-aos="fade-up" >Unforgotable Events</h1>
-          {/* desc */}
-          <p className="text-2xl text-justify" data-aos="fade-right"
+        className="relative flex lg:flex-row flex-col items-center lg:justify-between lg:px-0 px-4 
+         max-w-screen-xl lg:mx-auto justify-center mt-10 lg:mt-20" >
+    
+        <div className="h-2/3 flex flex-wrap flex-col lg:h-full gap-6 lg:w-2/6
+        text-wrap lg:mt-10">
+   
+          <h2 className="uppercase" data-aos="fade-up" >Unforgotable Events</h2>
+         
+          <p className="text-xl text-justify" data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
-            Festivida is a premier event management company located in Dhaka, Bangladesh, dedicated to creating unforgettable experiences through meticulously planned and flawlessly executed events all through bangladesh. With a passion for innovation and a commitment to excellence, Festivida has established itself as a trusted name in the event management industry.
+            Festivida is a premier event management company located in Dhaka, Bangladesh,
+            dedicated to creating unforgettable experiences through meticulously planned
+            and flawlessly executed events all through bangladesh. With a passion for
+            innovation and a commitment to excellence, Festivida has established itself
+            as a trusted name in the event management industry.
           </p>
-          {/* button */}
+          
           <div className={"w-full flex gap-4 mt-3"}>
-            {/* <Button
-          className={"text-lg px-2 bg-card-foreground text-background"}
-          variant={"outline"}
-        >
-          View Our Work
-        </Button> */}
+    
             <button
 
-              className={"text-xl px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 font-bold tracking-wider text-white"}
-data-aos="zoom-in" 
+              className={"text-lg px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"}
+              data-aos="zoom-in"
             >
               <HashLink slot to='/#contact'>GET STARTED</HashLink>
 
@@ -65,31 +63,30 @@ data-aos="zoom-in"
           </div>
         </div>
 
-        {/* image-container */}
-        <div className={"h-1/2 lg:h-full lg:w-1/2 mr-20 relative cursor-pointer lg:mt-20 xl:mt-20" }
-        data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="1000"
+   
+        <div className={"h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"}
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
         >
           <Carousel images={countries} />
         </div>
 
-
-
-        {/* <div className={"h-1/2 lg:h-full lg:w-1/2 relative cursor-pointer lg:mt-20 xl:mt-20"} >
-          <EmblaCarousel />
-        </div> */}
-
       </div>
+
+
+
+
+
 
       <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
         <h2 className=" px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
-        <p className=" text-justify flex-wrap text-wrap px-2 text-2xl max-w-screen-2xl mx-auto" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+        <p className=" text-justify flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
           We are a full service international event planning and design studio
           based in Miami, Florida. Global clients seek our services to plan,
           design, and produce their special events, not only in South Florida,
@@ -98,7 +95,7 @@ data-aos="zoom-in"
 
       </div>
 
-      <div className="mx-auto container px-6 xl:px-0 py-5">
+      <div className="max-w-screen-xl mx-auto container px-6 xl:px-0 py-5">
         <div className="flex flex-col">
 
           <div className="mt-10 grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
@@ -110,12 +107,9 @@ data-aos="zoom-in"
                   Corporate Events
                 </h2>
 
-                {/* <button className="bg-blue-900 text-amber-50 px-5 py-2 rounded-full" >
-                      <HashLink slot to='/#contact'>CONTACT NOW</HashLink>
-
-                    </button> */}
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#corporate'>Learn More</HashLink>
+              
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -130,8 +124,8 @@ data-aos="zoom-in"
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                    <HashLink slot to='/service/#entertainment'>Learn More</HashLink>
+                  <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
                 </Link>
@@ -147,8 +141,8 @@ data-aos="zoom-in"
 
                 </h2>
 
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#socialevent'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl"> 
+                  <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -162,8 +156,8 @@ data-aos="zoom-in"
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#marketing'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                  <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
               </div>
@@ -174,8 +168,8 @@ data-aos="zoom-in"
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   Post-Event Analysis
                 </h2>
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#postevent'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -185,8 +179,8 @@ data-aos="zoom-in"
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#trade'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                  <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -197,8 +191,8 @@ data-aos="zoom-in"
                   Photo &  <br />
                   Videography
                 </h2>
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#photo'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                  <HashLink slot to='/service/#photo'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -209,8 +203,8 @@ data-aos="zoom-in"
                 <h2 className='text-[#ffffff] text-center font-extrabold '>
                   Concert
                 </h2>
-                <button className="bg-gray-600 text-amber-50 px-5 py-3 text-xl rounded-2xl">
-                  <HashLink slot to='/service/#concert'>Learn More</HashLink>
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                  <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -225,7 +219,7 @@ data-aos="zoom-in"
         <h2>
           GET IN TOUCH
         </h2>
-        <p className="text-2xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center">
+        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center">
           Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at Festivida74@Gmail.com.
         </p>
         <div className=" flex flex-wrap justify-center items-center" >
@@ -233,24 +227,13 @@ data-aos="zoom-in"
         </div>
       </div>
 
-      <div>
+      <div className="max-w-screen-xl mx-auto">
         <Location />
       </div>
 
-      {/* <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-        <h2 className='px-5 text-center text-balance '>
-          FOLLOW US ON INSTAGRAM
-        </h2>
-
-        <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
-          <p className='text-4xl font-extralight italic hover:text-blue-500'>
-            @Festivida
-          </p>
-        </a>
-      </div> */}
 
 
-      <div className="max-w-screen-2xl mx-auto my-10">
+      <div className="max-w-screen-xl mx-auto my-10">
         <ScrollTop />
       </div>
 
