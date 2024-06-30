@@ -37,7 +37,7 @@ function Contact() {
                 budget: budget,
                 event_date: date,
                 message: details
-               
+
             }
         };
 
@@ -51,7 +51,7 @@ function Contact() {
             setBudget('');
             setDate('');
             setDetails('');
-           
+
             alert('order placed successfully');
         } catch (error) {
             console.error(error);
@@ -61,74 +61,64 @@ function Contact() {
 
     return (
         <>
+            <div>
+             
 
-            <div className="mb-20" >
-            <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-                <h2 >
-                    GET IN TOUCH
-                </h2>
-                <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
-                    At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
-                    <br />
-                    and we will get in touch as soon as we can.
-                </p>
+                <div className="mb-20" >
+                    <div className="">
 
-            </div>
-
-                <div className="">
-
-                    <form ref={form} onSubmit={handleSubmit} className="">
+                        <form ref={form} onSubmit={handleSubmit} className="">
 
 
-                        <div className="md:flex items-center">
-                            <div className="md:w-72 w-80 xl:w-[25rem] lg:w-[25rem] flex flex-col">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="text" name="user_name" value={username} onChange={(e) => setUsername(e.target.value)} required className=" py-4 text-xl leading-none
+                            <div className="md:flex items-center">
+                                <div className="md:w-72 w-80 xl:w-[25rem] lg:w-[25rem] flex flex-col">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="text" name="user_name" value={username} onChange={(e) => setUsername(e.target.value)} required className=" py-4 text-xl leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Name*" />
-                            </div>
+                                </div>
 
-                            <div className="md:w-72 w-80 xl:w-[25rem] lg:w-[25rem] flex flex-col md:ml-6 md:mt-0 mt-4">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="tel" name="phone_number" value={mobile} onChange={(e) => setMobile(e.target.value)} required className=" py-4 text-xl  leading-none
+                                <div className="md:w-72 w-80 xl:w-[25rem] lg:w-[25rem] flex flex-col md:ml-6 md:mt-0 mt-4">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="tel" name="phone_number" value={mobile} onChange={(e) => setMobile(e.target.value)} required className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Phone Number*" />
+                                </div>
+
                             </div>
 
-                        </div>
-
-                        <div className="md:flex items-center mt-5">
-                            <div className="md:w-72 w-80 flex flex-col xl:w-[25rem] lg:w-[25rem]">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} required className=" py-4 text-xl  leading-none
+                            <div className="md:flex items-center mt-5">
+                                <div className="md:w-72 w-80 flex flex-col xl:w-[25rem] lg:w-[25rem]">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} required className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Email*" />
-                            </div>
+                                </div>
 
-                            <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="number" name="guest_count" value={guest} onChange={(e) => setGuest(e.target.value)} required  className=" py-4 text-xl  leading-none
+                                <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="number" name="guest_count" value={guest} onChange={(e) => setGuest(e.target.value)} required className=" py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Guest Count*" />
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="md:flex items-center mt-5">
-                            <div className="md:w-72 w-80 flex flex-col xl:w-[25rem] lg:w-[25rem]">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setBudget(e.target.value)} required  className="py-4 text-xl  leading-none
+                            <div className="md:flex items-center mt-5">
+                                <div className="md:w-72 w-80 flex flex-col xl:w-[25rem] lg:w-[25rem]">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="number" name="budget" value={budget} onChange={(e) => setBudget(e.target.value)} required className="py-4 text-xl  leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Budget*" />
-                            </div>
-                            <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
-                                <label className="text-sm font-extralight leading-none text-gray-800"></label>
-                                <input tabIndex={0} type="date" name="event_date" value={date} onChange={(e) => setDate(e.target.value)} required  className="py-4 text-xl  leading-none
+                                </div>
+                                <div className="md:w-72 w-80 flex flex-col md:ml-6 md:mt-0 mt-4 xl:w-[25rem] lg:w-[25rem]">
+                                    <label className="text-sm font-extralight leading-none text-gray-800"></label>
+                                    <input tabIndex={0} type="date" name="event_date" value={date} onChange={(e) => setDate(e.target.value)} required className="py-4 text-xl  leading-none
                              text-gray-400 p-3 focus:oultine-none focus:border-indigo-700 mt-1
                               bg-blue-100 border rounded border-blue-300 placeholder-gray-400" placeholder="Event Date*" />
-                            </div>
+                                </div>
 
-                        </div>
-                        {/* <div className="md:flex items-center mt-8">
+                            </div>
+                            {/* <div className="md:flex items-center mt-8">
                         <div className="md:w-72 flex flex-col">
                             <label className="text-base font-semibold leading-none text-gray-800">Company name</label>
                             <input tabIndex={0} role="input" arial-label="Please input company name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 " placeholder="Please input company name" />
@@ -138,26 +128,28 @@ function Contact() {
                             <input tabIndex={0} arial-label="Please input country name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input country name" />
                         </div>
                     </div> */}
-                        <div>
-                            <div className="w-full flex flex-col mt-8">
-                                <label className="text-base font-semibold leading-none text-gray-800"></label>
-                                <textarea tabIndex={0} role="textbox" type="text" name="message" value={details} 
-                                onChange={(e) => setDetails(e.target.value)} required  
-                                className=" py-7 h-36 text-xl leading-none
+                            <div>
+                                <div className="w-full flex flex-col mt-8">
+                                    <label className="text-base font-semibold leading-none text-gray-800"></label>
+                                    <textarea tabIndex={0} role="textbox" type="text" name="message" value={details}
+                                        onChange={(e) => setDetails(e.target.value)} required
+                                        className=" py-7 h-36 text-xl leading-none
                              text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4
-                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400 resize-none" 
-                              placeholder="Tell us about your event please*" />
-                                {/* <input type="submit" value="Send" /> */}
+                              bg-blue-100 border rounded border-blue-300 placeholder-gray-400 resize-none"
+                                        placeholder="Tell us about your event please*" />
+                                    {/* <input type="submit" value="Send" /> */}
+                                </div>
                             </div>
-                        </div>
-                        {/* <p className="text-xs leading-3 text-gray-600 mt-4">By clicking submit you agree to our terms of service, privacy policy and how we use data as stated</p> */}
-                        <div className="flex items-center justify-center w-full mt-7">
+                            {/* <p className="text-xs leading-3 text-gray-600 mt-4">By clicking submit you agree to our terms of service, privacy policy and how we use data as stated</p> */}
+                            <div className="flex items-center justify-center w-full mt-7">
 
-                            <button className="text-xl px-6 py-3 mt-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white" type="submit" value="Send" >SEND MESSAGE</button>
-                        </div>
-                    </form>
+                                <button className="text-xl px-6 py-3 mt-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white" type="submit" value="Send" >SEND MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
 
         </>
     )

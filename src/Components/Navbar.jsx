@@ -97,7 +97,7 @@ export default function Navbar() {
               <button className="ml-16 text-md px-4 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"
 
               >
-                <HashLink smooth to='/#homecontact'>CONTACT NOW</HashLink>
+                <HashLink smooth to='/#contact'>CONTACT NOW</HashLink>
 
               </button>
             </Link>

@@ -33,12 +33,12 @@ const Hero = () => {
       <div
         className="relative flex lg:flex-row flex-col items-center lg:justify-between lg:px-0 px-4 
          max-w-screen-xl lg:mx-auto justify-center mt-10 lg:mt-20" >
-    
+
         <div className="h-2/3 flex flex-wrap flex-col lg:h-full gap-6 lg:w-2/6
         text-wrap lg:mt-10">
-   
+
           <h2 className="uppercase" data-aos="fade-up" >Unforgotable Events</h2>
-         
+
           <p className="text-xl text-justify" data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
@@ -48,21 +48,21 @@ const Hero = () => {
             innovation and a commitment to excellence, Festivida has established itself
             as a trusted name in the event management industry.
           </p>
-          
+
           <div className={"w-full flex gap-4 mt-3"}>
-    
+
             <button
 
               className={"text-lg px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"}
               data-aos="zoom-in"
             >
-              <HashLink smooth to='/#homecontact'>GET STARTED</HashLink>
+              <HashLink smooth to='/#contact'>GET STARTED</HashLink>
 
             </button>
           </div>
         </div>
 
-   
+
         <div className={"h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"}
           data-aos="fade-left"
           data-aos-offset="300"
@@ -106,7 +106,7 @@ const Hero = () => {
                   Corporate Events
                 </h2>
 
-              
+
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
                   <HashLink smooth to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
@@ -124,7 +124,7 @@ const Hero = () => {
                 <Link to={"/service"}>
 
                   <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                     <HashLink smooth to='/service/#entertainment'>LEARN MORE</HashLink>
+                    <HashLink smooth to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
                 </Link>
@@ -140,7 +140,7 @@ const Hero = () => {
 
                 </h2>
 
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl"> 
+                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
                   <HashLink smooth to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -212,10 +212,22 @@ const Hero = () => {
         </div>
       </div>
 
-        <div className=" flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000" id="homecontact" >
-          <Contact />
-        </div>
-      
+      <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+        <h2 >
+          GET IN TOUCH
+        </h2>
+        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
+          At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
+          <br />
+          and we will get in touch as soon as we can.
+        </p>
+
+      </div>
+
+      <div className=" flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000" id="contact" >
+        <Contact />
+      </div>
+
 
       <div className="max-w-screen-xl mx-auto" data-aos="fade-left" data-aos-duration="1000">
         <Location />

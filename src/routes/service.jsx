@@ -136,8 +136,8 @@ const Service = () => {
                 <div className='flex flex-row gap-10 justify-center items-center px-5'>
                     <div className='lg:w-1/2 w-full'>
                         <h2 className='pb-5'>
-                            Post-Event Analysis                        
-                            </h2>
+                            Post-Event Analysis
+                        </h2>
                         <p className='text-2xl text-justify flex-wrap text-wrap' data-aos="zoom-in" data-aos-duration="900">
                             Festivida places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
                         </p>
@@ -203,6 +203,18 @@ const Service = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                <h2 >
+                    GET IN TOUCH
+                </h2>
+                <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
+                    At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
+                    <br />
+                    and we will get in touch as soon as we can.
+                </p>
+
             </div>
 
             <div className="flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000" id='homecontact'>
@@ -429,7 +441,7 @@ const Service = () => {
 
             </div>
 
-            <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+            {/* <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                 <h2>
                     GET IN TOUCH
                 </h2>
@@ -437,9 +449,21 @@ const Service = () => {
                     Tell us a bit about yourself, and we will get in touch as soon as we can.
                 </p>
 
+            </div> */}
+
+            <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+                <h2 >
+                    GET IN TOUCH
+                </h2>
+                <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
+                    At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
+                    <br />
+                    and we will get in touch as soon as we can.
+                </p>
+
             </div>
 
-            <div className=" flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000">
+            <div className=" flex flex-wrap justify-center items-center" id='contact'>
                 <Contact />
             </div>
 
