@@ -16,7 +16,6 @@ import Carousel from "./Carousel";
 import { countries } from './Data';
 import Location from '../Components/Location';
 import AOS from "aos";
-import ScrollTop from '../Components/ScrolltoTop';
 import { useEffect } from "react";
 
 // import { useNavigate } from 'react-router-dom';
@@ -57,7 +56,7 @@ const Hero = () => {
               className={"text-lg px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"}
               data-aos="zoom-in"
             >
-              <HashLink slot to='/#contact'>GET STARTED</HashLink>
+              <HashLink smooth to='/#homecontact'>GET STARTED</HashLink>
 
             </button>
           </div>
@@ -109,7 +108,7 @@ const Hero = () => {
 
               
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -125,7 +124,7 @@ const Hero = () => {
                 <Link to={"/service"}>
 
                   <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
+                     <HashLink smooth to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
                 </Link>
@@ -142,7 +141,7 @@ const Hero = () => {
                 </h2>
 
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl"> 
-                  <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -157,7 +156,7 @@ const Hero = () => {
                   Promotion
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
               </div>
@@ -169,7 +168,7 @@ const Hero = () => {
                   Post-Event Analysis
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -180,10 +179,11 @@ const Hero = () => {
                   Trade Fair
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
+
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
@@ -192,7 +192,7 @@ const Hero = () => {
                   Videography
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink slot to='/service/#photo'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -204,7 +204,7 @@ const Hero = () => {
                   Concert
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
+                  <HashLink smooth to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -212,20 +212,10 @@ const Hero = () => {
         </div>
       </div>
 
-
-
-      <div className="mt-5 pt-5 flex flex-col items-center justify-center 
-      flex-wrap text-wrap gap-4 lg:px-20 xl:px-20" id="contact" data-aos="zoom-in" data-aos-duration="1000">
-        <h2>
-          GET IN TOUCH
-        </h2>
-        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center">
-          Tell us a bit about yourself, and we will get in touch as soon as we can. You can also reach us directly at Festivida74@Gmail.com.
-        </p>
-        <div className=" flex flex-wrap justify-center items-center" >
+        <div className=" flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000" id="homecontact" >
           <Contact />
         </div>
-      </div>
+      
 
       <div className="max-w-screen-xl mx-auto" data-aos="fade-left" data-aos-duration="1000">
         <Location />
@@ -234,7 +224,7 @@ const Hero = () => {
 
 
       <div className="max-w-screen-xl mx-auto my-10">
-        <ScrollTop />
+        <smoothTop />
       </div>
 
 
