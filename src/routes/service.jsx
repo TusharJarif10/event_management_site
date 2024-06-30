@@ -248,9 +248,9 @@ const Service = () => {
         <>
             <Navbar />
 
-            <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36 mt-10 mb-20 pb-5 pt-10'>
+            <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8  lg:px-12 xl:px-36 mt-10 mb-20 pb-5 pt-10'>
 
-                <h1 className='mb-10 lg:mb-20 xl:mb-20 mb-16'>
+                <h1 className='mb-10 lg:mb-20 xl:mb-20 '>
                     SERVICES
                 </h1>
 
@@ -267,11 +267,11 @@ const Service = () => {
             <div className='flex flex-col'>
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36 mb-20 pb-10 lg:pt-10 xl:pt-10" id="corporate" data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36 mb-20 pb-10 lg:pt-10 xl:pt-10" id="corporate" data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
                             Corporate Events
                         </h2>
@@ -288,11 +288,11 @@ const Service = () => {
             </div>
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36 mb-20 pb-10 lg:pt-10 xl:pt-10" id="entertainment" data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36 mb-20 pb-10 lg:pt-10 xl:pt-10" id="entertainment" data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
 
                             Entertainment Event
@@ -310,11 +310,11 @@ const Service = () => {
             </div>
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='socialevent' data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='socialevent' data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
                             Social Event
                         </h2>
@@ -331,11 +331,11 @@ const Service = () => {
             </div>
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='marketing' data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='marketing' data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
                             Marketing &
                             <br />
@@ -355,11 +355,11 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='postevent' data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='postevent' data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
 
                             Post-Event Analysis
@@ -380,11 +380,11 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='trade' data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='trade' data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
                             Trade Fair
                         </h2>
@@ -394,7 +394,7 @@ const Service = () => {
 
                     </div>
 
-                    <div className='lg:w-1/3 w-full'>
+                    <div className='w-auto'>
                         <img src={birthday} alt="" />
                     </div>
                 </div>
@@ -404,11 +404,11 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id='photovideo' data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id="concert" data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
 
                             Photo &
@@ -430,11 +430,11 @@ const Service = () => {
 
 
             <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8 px-10 lg:px-12 xl:px-36  mb-20 pb-10 lg:pt-10 xl:pt-10" id="concert" data-aos="fade-left" data-aos-duration="900">
+                className="relative flex flex-col justify-between px-4 mx-2 mb-20 pb-10 " id='concert' data-aos="zoom-in" >
 
                 <div className='flex lg:flex-row flex-col gap-5 justify-between'>
 
-                    <div className='lg:w-1/2 w-full'>
+                    <div className='w-auto'>
                         <h2 className='pb-5'>
                             Concert
                         </h2>
@@ -444,7 +444,7 @@ const Service = () => {
 
                     </div>
 
-                    <div className='lg:w-1/3 w-full'>
+                    <div className='w-auto'>
                         <img src={trade} alt="" />
                     </div>
                 </div>
@@ -452,16 +452,6 @@ const Service = () => {
 
             </div>
             </div>
-
-            {/* <div className="lg:pt-10 xl:pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
-                <h2>
-                    GET IN TOUCH
-                </h2>
-                <p className="w-5/6 lg:w-3/6 xl:w-3/6 text-2xl text-center flex-wrap text-wrap px-2 mx-2">
-                    Tell us a bit about yourself, and we will get in touch as soon as we can.
-                </p>
-
-            </div> */}
 
             <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                 <h2 >
