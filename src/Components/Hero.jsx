@@ -17,6 +17,7 @@ import { countries } from './Data';
 import Location from '../Components/Location';
 import AOS from "aos";
 import { useEffect } from "react";
+import ScrolltoTop from "../Components/ScrolltoTop";
 
 // import { useNavigate } from 'react-router-dom';
 
@@ -108,7 +109,7 @@ const Hero = () => {
 
 
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink smooth to='/service/#corporate'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -124,7 +125,7 @@ const Hero = () => {
                 <Link to={"/service"}>
 
                   <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                    <HashLink smooth to='/service/#entertainment'>LEARN MORE</HashLink>
+                    <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
                 </Link>
@@ -141,7 +142,7 @@ const Hero = () => {
                 </h2>
 
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink smooth to='/service/#socialevent'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
 
@@ -156,7 +157,7 @@ const Hero = () => {
                   Promotion
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink smooth to='/service/#marketing'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
               </div>
@@ -168,7 +169,7 @@ const Hero = () => {
                   Post-Event Analysis
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
-                  <HashLink smooth to='/service/#postevent'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -179,7 +180,7 @@ const Hero = () => {
                   Trade Fair
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink smooth to='/service/#trade'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -192,7 +193,7 @@ const Hero = () => {
                   Videography
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink smooth to='/service/#photovideo'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -204,7 +205,7 @@ const Hero = () => {
                   Concert
                 </h2>
                 <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
-                  <HashLink smooth to='/service/#concert'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
@@ -236,7 +237,7 @@ const Hero = () => {
 
 
       <div className="max-w-screen-xl mx-auto my-10">
-        <smoothTop />
+        <ScrolltoTop />
       </div>
 
 
