@@ -32,8 +32,8 @@ const Hero = () => {
     <>
 
       <div
-        className="relative flex lg:flex-row flex-col items-center lg:justify-between lg:px-0 px-4 
-         max-w-screen-xl lg:mx-auto justify-center mt-10 lg:mt-20" >
+        className="relative flex lg:flex-row flex-col items-center lg:justify-between lg:px-0 px-4 pt-24
+         max-w-screen-xl lg:mx-auto justify-center mt-10 lg:mt-20 md:pt-20 lg:pt-24 xl:pt-24" >
 
         <div className="h-2/3 flex flex-wrap flex-col lg:h-full gap-6 lg:w-2/6
         text-wrap lg:mt-10">
@@ -95,7 +95,7 @@ const Hero = () => {
 
       </div>
 
-      <div className="max-w-screen-xl mx-auto container px-6 xl:px-0 py-5">
+      <div className="max-w-screen-xl mx-auto container px-2 xl:px-0 py-5">
         <div className="flex flex-col">
 
           <div className="mt-10 grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">

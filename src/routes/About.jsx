@@ -85,11 +85,11 @@ function About() {
   return (
     <>
     <Navbar />
-    <div className="p-4  text-[#444545] mx-auto max-w-screen-xl lg:mt-20 mt-5">
+    <div className="px-2 text-[#444545] mx-auto max-w-screen-xl lg:mt-20 mt-5 pt-20 md:pt-20">
       <div className="flex flex-col md:flex-row shadow-lg">
         <div className="md:w-1/2 p-4 mt-5">
           <i className="fa-solid fa-bullseye text-4xl mb-2"></i>
-          <h2 className="pb-8">MISSION</h2>
+          <h2 className="pb-4">MISSION</h2>
           <p className="text-xl text-justify">{missionContent}</p>
           <img
             src= {trade}
@@ -99,7 +99,7 @@ function About() {
         </div>
         <div className="md:w-1/2 p-4 mt-5">
           <i className="fa-solid fa-eye text-4xl mb-2"></i>
-          <h2 className="pb-8">VISION</h2>
+          <h2 className="pb-4">VISION</h2>
           <p className="text-xl text-justify">{visionContent}</p>
           <img
             src={wedding}
@@ -111,7 +111,7 @@ function About() {
 
       <div className="p-4 shadow-lg mt-10">
         <i className="fa-solid fa-handshake text-4xl mb-2"></i>
-        <h2 className=" mb-8 ">PROMISE</h2>
+        <h2 className=" mb-4 ">PROMISE</h2>
         <p className="text-xl text-justify">{promiseContent}</p>
         <img
           src= {concert}
@@ -122,7 +122,7 @@ function About() {
 
       <div className="p-4 shadow-lg mt-10">
         <i className="fa-solid fa-building text-4xl mb-2"></i>
-        <h2 className="mb-8 uppercase">Why This Company</h2>
+        <h2 className="mb-4 uppercase">Why This Company</h2>
         <ul className="list-none ml-5">
           {whyCompanyContent.map((item, index) => (
             <li key={index} className="mb-4">

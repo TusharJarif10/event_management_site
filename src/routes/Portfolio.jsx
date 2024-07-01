@@ -29,14 +29,14 @@ const Portfolio = () => {
         <>
             <Navbar />
 
-            <div className='max-w-screen-xl mx-auto'>
+            <div className='max-w-screen-xl mx-auto pt-20'>
                 <div className='relative flex flex-col justify-center items-center xl:pt-10 lg:pt-10 xl:mt-20 lg:mt-20'>
 
                     <h1 className='mb-10' data-aos="zoom-in-right">
                         PORTFOLIO
                     </h1>
 
-                    <p className='text-2xl text-justify flex-wrap text-wrap pb-10' data-aos="zoom-in-left">
+                    <p className='text-xl text-justify flex-wrap text-wrap pb-10' data-aos="zoom-in-left">
                         Festivida is a premier event management company located in Dhaka, Bangladesh, dedicated to creating unforgettable experiences through meticulously planned and flawlessly executed events all through bangladesh. With a passion for innovation and a commitment to excellence, Festivida has established itself as a trusted name in the event management industry.
 
                     </p>
@@ -110,13 +110,13 @@ const Portfolio = () => {
         <>
             <Navbar />
 
-            <div className='relative flex flex-col justify-center items-center px-4 mx-2 sm:px-8 md:px-10 lg:px-12 xl:px-36 mt-10 mb-5 pb-5 lg:pt-10 xl:pt-10'>
+            <div className='pt-24 relative flex flex-col justify-center items-center px-4 mt-10 pb-5'>
 
-                <h1 className='mb-10'>
+                <h1 className='mb-5'>
                     PORTFOLIO
                 </h1>
 
-                <p className='md:text-xl text-justify flex-wrap text-wrap px-2 mx-2 font-extralight'>
+                <p className='text-lg text-justify flex-wrap text-wrap font-extralight'>
                     welcome to Festivida, where every occasion becomes a cherished
                     memory. We specialize in creating bespoke events tailored to your
                     vision, offering a comprehensive range of services including

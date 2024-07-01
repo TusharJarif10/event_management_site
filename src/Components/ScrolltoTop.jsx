@@ -10,9 +10,9 @@ const ScrolltoTop = () => {
     <div>
        <div className="">
                
-               <button className="px-2 py-2 text-[#2179A9]"
+               <button className="bottom-0 left-0 fixed px-2 py-2 text-[#3694ff]"
                    onClick={scrollToTop}>
-                   <RiArrowUpCircleFill   size={45} />
+                   <RiArrowUpCircleFill  size={55} />
                </button>
            </div>
     </div>

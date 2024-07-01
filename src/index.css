@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: rgb(240, 246, 246);
-  
 }
 
 h1{
@@ -26,13 +26,11 @@ p{
   padding-left: 13px;
   padding-right: 13px;
   border-radius: 12px;
-  font-size: large;
+  font-size: medium;
 }
 
 .inactive-link{
-  font-size:  large;
-
- 
+  font-size:  medium;
 }
  
 
@@ -42,9 +40,8 @@ p{
   padding-left: 13px;
   padding-right: 13px;
   border-radius: 12px;
-  font-weight: 600;
+  font-weight: 400;
 }
-
 
 
 html, body {
