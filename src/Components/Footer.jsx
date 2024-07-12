@@ -19,7 +19,7 @@ const Footer = () => {
 
 
 
-    <div className="mx-auto  xl:px-0 lg:px-0 sm:px-0 px-0 bg-gradient-to-r from-orange-100 to-teal-100 shadow-2xl  shadow-[#000000] py-10">
+    <div className="mx-auto  xl:px-0 lg:px-0 sm:px-0 px-0 bg-gradient-to-b from-orange-100 to-teal-200 shadow-2xl  shadow-[#000000] py-2 mt-[5rem]">
       <div className="flex flex-col items-center justify-center">
 
         <div className=''>
@@ -59,7 +59,7 @@ const Footer = () => {
               </a>
 
             </div>
-        <div className="flex items-center mt-6 mb-7">
+        <div className="flex items-center mt-6 mb-4">
           <p className="text-lg font-bold leading-4 text-gray-600">
             2024 <span className="font-semibold">Festivida</span>
           </p>

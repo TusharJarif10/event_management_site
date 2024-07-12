@@ -4,7 +4,7 @@
 
 body{
   font-family: monospace;
-  @apply bg-white;
+  @apply bg-gradient-to-r from-teal-50 to-red-50;
 }
 
 h1{
