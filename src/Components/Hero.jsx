@@ -103,12 +103,12 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="meeting" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold'>
+                <h2 className='text-amber-50 text-center font-extrabold'>
                   Corporate Events
                 </h2>
 
 
-                <button className="bg-transparent text-lg hover:bg-blue-500 hover:text-lg text-amber-50 px-2 py-1 rounded-lg ">
+                <button className="bg-transparent text-lg hover:bg-blue-500 hover:text-lg text-amber-100 px-2 py-1 rounded-lg ">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
