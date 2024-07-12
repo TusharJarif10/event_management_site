@@ -32,7 +32,8 @@ export default function Navbar() {
   return isDesktop ? (
 
     <>
-      <nav className="top-0 fixed w-full bg-yellow-400 pt-2 z-10 flex items-center drop-shadow-lg justify-between px-28 pb-2"
+      <nav className="top-0 fixed w-full bg-gradient-to-b from-teal-200 to-orange-100 pt-2 z-10 flex items-center 
+   justify-between px-28 pb-2"
         data-aos="fade-down"
         data-aos-anchor-placement="bottom-center"
         data-aos-duration="1200"
@@ -94,11 +95,11 @@ export default function Navbar() {
             </li>
 
             <Link to="/contact">
-              <button className="ml-16 text-md px-4 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"
-
+              <button className="ml-16 text-md font-mono
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
+                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-950"
               >
                 <HashLink smooth to='/#contact'>CONTACT NOW</HashLink>
-
               </button>
             </Link>
 
@@ -134,7 +135,7 @@ export default function Navbar() {
 
   ) : (
     <>
-      <div className=" bg-yellow-400 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 drop-shadow-xl ">
+      <div className=" bg-yellow-50 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 drop-shadow-xl ">
 
         <div>
           <Link to="/">

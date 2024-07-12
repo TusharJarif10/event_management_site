@@ -52,10 +52,10 @@ const Hero = () => {
 
           <div className={"w-full flex gap-4 mt-3"}>
 
-            <button
-
-              className={"text-lg px-6 py-2 rounded-2xl  bg-card-foreground bg-gray-600 hover:bg-blue-500 tracking-wider text-white"}
-              data-aos="zoom-in"
+            <button className=" text-md font-mono
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
+                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-950"
+              
             >
               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
 
@@ -84,8 +84,8 @@ const Hero = () => {
         <h2 className=" px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
-        <p className=" text-justify flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto" data-aos="fade-right"
-          data-aos-offset="300"
+        <p className=" text-justify flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto" data-aos="fade-top"
+          data-aos-offset="200"
           data-aos-easing="ease-in-sine">
           We are a full service international event planning and design studio
           based in Miami, Florida. Global clients seek our services to plan,
@@ -108,7 +108,7 @@ const Hero = () => {
                 </h2>
 
 
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                <button className="bg-transparent text-lg hover:bg-blue-500 hover:text-lg text-amber-50 px-2 py-1 rounded-lg ">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
