@@ -52,10 +52,9 @@ const Hero = () => {
 
           <div className={"w-full flex gap-4 mt-3"}>
 
-            <button className=" text-md font-mono
+            <button className=" text-lg mb-10 font-mono
                px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
-                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-950"
-              
+                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-900"
             >
               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
 
@@ -108,7 +107,8 @@ const Hero = () => {
                 </h2>
 
 
-                <button className="bg-transparent text-lg hover:bg-blue-500 hover:text-lg text-amber-100 px-2 py-1 rounded-lg ">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -124,7 +124,8 @@ const Hero = () => {
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                  <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
@@ -141,7 +142,8 @@ const Hero = () => {
 
                 </h2>
 
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -156,7 +158,8 @@ const Hero = () => {
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
@@ -168,7 +171,8 @@ const Hero = () => {
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   Post-Event Analysis
                 </h2>
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl ">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -179,7 +183,8 @@ const Hero = () => {
                 <h2 className='text-[#fdfeff] text-center font-extrabold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -192,7 +197,8 @@ const Hero = () => {
                   Photo &  <br />
                   Videography
                 </h2>
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -204,7 +210,8 @@ const Hero = () => {
                 <h2 className='text-[#ffffff] text-center font-extrabold '>
                   Concert
                 </h2>
-                <button className="bg-gray-600 hover:bg-blue-500 text-amber-50 px-5 py-3 text-md rounded-2xl">
+                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -220,7 +227,7 @@ const Hero = () => {
         <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
           At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
           <br />
-          and we will get in touch as soon as we can.
+          and you can directly contact us at +880 1304177789.
         </p>
 
       </div>
