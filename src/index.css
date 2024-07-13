@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body{
-  font-family: monospace;
   @apply bg-white;
 }
 
@@ -27,15 +26,11 @@ p{
   padding-left: 13px;
   padding-right: 13px;
   border-radius: 5px;
-  font-size: large;
-  font-family: monospace;
-  @apply tracking-widest;
+  font-size: medium;
 }
 
 .inactive-link{
-  font-size:  large;
-  font-family: monospace;
-  @apply tracking-widest;
+  font-size:  medium;
 }
  
 
@@ -45,9 +40,7 @@ p{
   padding-left: 12px;
   padding-right: 12px;
   border-radius: 5px;
-  font-size: large;
-  font-family: monospace;
-  @apply tracking-widest;
+  font-size: medium;
 }
 
 

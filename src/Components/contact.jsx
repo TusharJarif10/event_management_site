@@ -143,9 +143,9 @@ function Contact() {
                             {/* <p className="text-xs leading-3 text-gray-600 mt-4">By clicking submit you agree to our terms of service, privacy policy and how we use data as stated</p> */}
                             <div className="flex items-center justify-center w-full mt-7">
 
-                                <button className="text-lg font-mono
-               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
-                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-950" type="submit" value="Send" >SEND MESSAGE</button>
+                                <button className="text-lg
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-semibold
+                from-blue-300 to-teal-300 hover:opacity-70 text-blue-950" type="submit" value="Send" >SEND MESSAGE</button>
                             </div>
                         </form>
                     </div>

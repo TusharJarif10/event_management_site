@@ -9,11 +9,7 @@ import trade from "../assets/trade-fair.jpg";
 import birthday from "../assets/birthday.jpg";
 import meeting from "../assets/meeting.jpg";
 import Contact from '../Components/contact';
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import fes from "../assets/festivida.png";
 import { useMediaQuery } from '../hooks/use-media-query';
-import { CgMail } from "react-icons/cg";
 
 
 import ScrollTop from '../Components/ScrolltoTop';
@@ -220,7 +216,7 @@ const Service = () => {
                 <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
                     At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
                     <br />
-                    and we will get in touch as soon as we can.
+                    and you can directly contact us at +880 1304177789.
                 </p>
 
             </div>
@@ -462,7 +458,7 @@ const Service = () => {
                 <p className="text-lg text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
                     At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
                     <br />
-                    and we will get in touch as soon as we can.
+                    and you can directly contact us at +880 1304177789.
                 </p>
 
             </div>
@@ -470,6 +466,8 @@ const Service = () => {
             <div className=" flex flex-wrap justify-center items-center" id='contact'>
                 <Contact />
             </div>
+
+            <ScrollTop />
 
             <div className='bottom-0'>
                 <Footer />

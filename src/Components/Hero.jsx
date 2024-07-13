@@ -1,15 +1,11 @@
 
-import corporate from "../assets/corporate.jpg";
 import wedding from "../assets/wedding.jpg";
 import concert from "../assets/concert.jpg";
 import videography from "../assets/videograpy.jpg";
-import cellular from "../assets/cellular.jpg";
 import award from "../assets/award.jpg";
 import trade from "../assets/trade-fair.jpg";
 import birthday from "../assets/birthday.jpg";
-import meeting from "../assets/meeting.jpg";
 import Contact from '../Components/contact';
-import { Button } from '@mui/material';
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
@@ -52,9 +48,9 @@ const Hero = () => {
 
           <div className={"w-full flex gap-4 mt-3"}>
 
-            <button className=" text-lg mb-10 font-mono
-               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
-                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-900"
+            <button className=" text-lg mb-10 
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-semibold
+                from-blue-300 to-teal-300 hover:opacity-70 text-blue-900"
             >
               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
 
@@ -64,10 +60,10 @@ const Hero = () => {
 
 
         <div className={"h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"}
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1000"
+          // data-aos="fade-left"
+          // data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
+          // data-aos-duration="1000"
         >
           <Carousel images={countries} />
         </div>
@@ -76,10 +72,7 @@ const Hero = () => {
 
 
 
-
-
-
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20">
         <h2 className=" px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
@@ -102,12 +95,12 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="meeting" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-amber-50 text-center font-extrabold'>
+                <h2 className='text-amber-50 text-center font-semibold'>
                   Corporate Events
                 </h2>
 
 
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
@@ -119,12 +112,12 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold '>
+                <h2 className='text-[#ffffff] text-center font-semibold '>
                   Entertainment Event
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                  <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
@@ -137,12 +130,12 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="wedding" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold '>
+                <h2 className='text-[#ffffff] text-center font-semibold '>
                   Social Event
 
                 </h2>
 
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
@@ -153,12 +146,12 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={videography} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold'>
+                <h2 className='text-[#ffffff] text-center font-semibold'>
                   Marketing &
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
@@ -168,10 +161,10 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center font-extrabold'>
+                <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Post-Event Analysis
                 </h2>
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
@@ -180,10 +173,10 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center font-extrabold'>
+                <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
@@ -193,11 +186,11 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center font-extrabold'>
+                <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Photo &  <br />
                   Videography
                 </h2>
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
@@ -207,10 +200,10 @@ const Hero = () => {
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-left" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={concert} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-extrabold '>
+                <h2 className='text-[#ffffff] text-center font-semibold '>
                   Concert
                 </h2>
-                <button className="bg-gray-500 text-lg hover:bg-gradient-to-b font-extrabold
+                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>

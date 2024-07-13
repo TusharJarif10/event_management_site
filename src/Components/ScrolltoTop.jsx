@@ -10,7 +10,7 @@ const ScrolltoTop = () => {
     <div>
        <div className="">
                
-               <button className="bottom-0 left-0 fixed px-2 py-2 text-[#3694ff]"
+               <button className="bottom-0 left-0 fixed px-2 py-2 text-[#31acff] animate-bounce"
                    onClick={scrollToTop}>
                    <RiArrowUpCircleFill  size={55} />
                </button>

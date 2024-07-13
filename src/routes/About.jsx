@@ -1,24 +1,20 @@
 
-import React from "react";
-import corporate from "../assets/corporate.jpg";
 import wedding from "../assets/concert.jpg";
 import concert from "../assets/concert.jpg";
-import videography from "../assets/videograpy.jpg";
-import cellular from "../assets/cellular.jpg";
-import award from "../assets/award.jpg";
 import trade from "../assets/trade-fair.jpg";
-import birthday from "../assets/birthday.jpg";
-import meeting from "../assets/meeting.jpg";
-import Contact from '../Components/contact';
+import Jayanta from "../assets/jayanta.jpg";
+import chayan from "../assets/chayan.jpg";
+import babor from "../assets/babor.jpg";
+import shila from "../assets/shila.jpg";
+import moynal from "../assets/moynal.jpg";
 
 import Navbar from '../Components/Navbar';
-import Hero from '../Components/Hero';
 import Footer from '../Components/Footer';
 import ScrollTop from '../Components/ScrolltoTop';
 
 function About() {
   const missionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful. ";
-  const visionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful.  ";
+  const visionContent = "Our goal is to make ourselves memorable, sustainable and your lifetime partner. Your pride by our presentation is our experience and strength for future. With all our expertise and experience and overall, with your support, our ultimate vision is to put ourselves on the MNC shelves.";
   const promiseContent =
     "To excel in event planning, focus on building strong client relationships by understanding their unique needs and tailoring events accordingly. Stay informed about industry trends and customer preferences to offer innovative solutions. Diversify your services to cover all aspects of event planning, maintain positive vendor relationships, invest in staff training, and incorporate sustainability practices to appeal to environmentally conscious clients and attendees.";
   const whyCompanyContent = [
@@ -78,8 +74,11 @@ function About() {
     },
   ];
   const topManagement = [
-    { name: "John Doe", position: "CEO", img: birthday},
-    { name: "Jane Smith", position: "CTO", img: meeting },
+    { name: "Jayanta Karmaker", position: "Chairman", img: Jayanta},
+    { name: "Shila Debi", position: "CEO", img: shila },
+    { name: "Zahir Uddin Md. Babor", position: "Managing Director", img: babor },
+    { name: "Chayan Debnath", position: "Cheif Operation Officer", img: chayan },
+    { name: "Moynal Hossain Saeed", position: "Executive Director", img: moynal },
   ];
 
   return (
@@ -109,18 +108,18 @@ function About() {
         </div>
       </div>
 
-      <div className="p-4 shadow-lg mt-10">
+      <div className="p-4 shadow-md mt-10">
         <i className="fa-solid fa-handshake text-4xl mb-2"></i>
         <h2 className=" mb-4 ">PROMISE</h2>
         <p className="text-xl text-justify">{promiseContent}</p>
         <img
           src= {concert}
-          className="w-full h-[600px] mt-4"
+          className="w-full h-[700px] mt-4"
           alt="Illustrating our promise"
         />
       </div>
 
-      <div className="p-4 shadow-lg mt-10">
+      <div className="p-4 shadow-md mt-10">
         <i className="fa-solid fa-building text-4xl mb-2"></i>
         <h2 className="mb-4 uppercase">Why This Company</h2>
         <ul className="list-none ml-5">
@@ -140,68 +139,24 @@ function About() {
         </ul>
       </div>
 
-      <div className="p-4 shadow-lg mt-10">
-        <h2 className=" mb-8 pb-8 uppercase">Top Management</h2>
+      <div className="p-4 shadow-md mt-10">
+        <h2 className=" mb-8 pb-8 uppercase">Festivida Overheads</h2>
         <div className="flex flex-col md:flex-row">
           {topManagement.map((person, index) => (
             <div key={index} className="md:w-1/2 p-4 text-center">
               <img
                 src={person.img}
-                className="w-[150px] h-[150px] rounded-full mx-auto mb-4"
+                className="w-[180px] h-[250px] rounded-full mx-auto mb-4"
                 alt={`Photo of ${person.name}`}
               />
-              <h3 className="font-semibold">{person.name}</h3>
-              <p>{person.position}</p>
+              <h3 className="font-semibold text-lg">{person.name}</h3>
+              <p className="text-md">{person.position}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* <style jsx global>{`
-        .our-vision-animate {
-          animation: fadeInUp 1s ease-in-out;
-        }
-        .why-company-icon {
-          animation: bounceIn 1s ease-in-out;
-        }
-        @keyframes fadeInUp {
-          0% {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        @keyframes bounceIn {
-          0%, 20%, 40%, 60%, 80%, 100% {
-            -webkit-animation-timing-function: cubic-bezier(0.215,0.61,0.355,1);
-            animation-timing-function: cubic-bezier(0.215,0.61,0.355,1);
-          }
-          0% {
-            opacity: 0;
-            transform: scale3d(.3,.3,.3);
-          }
-          20% {
-            transform: scale3d(1.1,1.1,1.1);
-          }
-          40% {
-            transform: scale3d(.9,.9,.9);
-          }
-          60% {
-            opacity: 1;
-            transform: scale3d(1.03,1.03,1.03);
-          }
-          80% {
-            transform: scale3d(.97,.97,.97);
-          }
-          100% {
-            opacity: 1;
-            transform: scale3d(1,1,1);
-          }
-        }
-      `}</style> */}
+
       <ScrollTop />
     </div>
 

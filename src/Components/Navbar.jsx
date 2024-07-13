@@ -3,17 +3,12 @@ import { Link } from 'react-router-dom';
 import { useState } from "react";
 import fes from "../assets/festivida.png";
 import { NavLink, useLocation } from 'react-router-dom';
-import { FaFacebook } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";
-import { BsBackspace } from "react-icons/bs";
 import { useMediaQuery } from '../hooks/use-media-query';
 import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import AOS from "aos";
 import { useEffect } from "react";
-import { RiInstagramFill } from "react-icons/ri";
-import { RiWhatsappFill } from "react-icons/ri";
 
 export default function Navbar() {
 
@@ -95,11 +90,11 @@ export default function Navbar() {
             </li>
 
             <Link to="/contact">
-              <button className="ml-16 text-md font-mono
-               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-extrabold
-                from-blue-300 to-teal-300 hover:opacity-70 tracking-wider text-blue-950"
+              <button className="ml-16 text-md 
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-semibold
+                from-blue-300 to-teal-300 hover:opacity-70 text-blue-950"
               >
-                <HashLink smooth to='/#contact'>CONTACT NOW</HashLink>
+                <HashLink smooth to='/#contact'>CONTACT US</HashLink>
               </button>
             </Link>
 
@@ -135,7 +130,7 @@ export default function Navbar() {
 
   ) : (
     <>
-      <div className=" bg-yellow-50 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 drop-shadow-xl ">
+      <div className=" bg-gradient-to-b from-teal-200 to-orange-100 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 drop-shadow-xl ">
 
         <div>
           <Link to="/">
@@ -143,9 +138,9 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div>
-          <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
-            <List>
+        <div className=''>
+          <Drawer className='' open={openDrawer} onClose={() => setOpenDrawer(false)}>
+            <List className='bg-gradient-to-b from-teal-200 to-orange-100 h-full'>
               <ListItemButton>
                 <ListItemIcon>
                   <ListItemText>
@@ -154,7 +149,7 @@ export default function Navbar() {
                       <img className="w-[170px]" src={fes} alt="logo" />
                     </Link>
 
-                    <ul className="flex flex-col space-y-6 py-8 pl-2">
+                    <ul className="flex flex-col space-y-6 py-8 pl-2 items-center justify-center">
                       <li className='inactive-link'>
                         <Link to="/" onClick={() => setOpenDrawer(false)}>
                           HOME
@@ -202,7 +197,7 @@ export default function Navbar() {
 
                       <li>
                         <button onClick={() => setOpenDrawer(false)}
-                          className={"text-xl px-3 py-1 rounded-xl bg-card-foreground bg-gray-600 text-white hover:bg-blue-500"}
+                          className={"text-xl tracking-widest font-mono px-3 py-1 rounded-md bg-card-foreground bg-gradient-to-r from-blue-800 to-blue-400 text-white hover:opacity-75"}
                         >
                           <HashLink slot to='/#contact'>CONTACT</HashLink>
                         </button>
