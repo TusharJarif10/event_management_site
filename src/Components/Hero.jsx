@@ -13,6 +13,8 @@ import { countries } from './Data';
 import Location from '../Components/Location';
 import AOS from "aos";
 import { useEffect } from "react";
+import Partner from '../Components/Partner3';
+
 import ScrolltoTop from "../Components/ScrolltoTop";
 
 // import { useNavigate } from 'react-router-dom';
@@ -59,7 +61,7 @@ const Hero = () => {
         </div>
 
 
-        <div className={"h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"}
+        <div className="h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"
           // data-aos="fade-left"
           // data-aos-offset="300"
           // data-aos-easing="ease-in-sine"
@@ -70,9 +72,9 @@ const Hero = () => {
 
       </div>
 
+        <Partner/>
 
-
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20">
+      <div className="mt-5 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20">
         <h2 className=" px-2 mx-2 flex items-center justify-center">
           WE'VE GOT YOUR BACK
         </h2>
