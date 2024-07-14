@@ -26,25 +26,25 @@ const Partner3 = () => {
                 <Marquee autoFill pauseOnHover >
 
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p1} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p1} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p2} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p2} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p3} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p3} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p4} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p4} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p5} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p5} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p6} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p6} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                     <div className="mx-6 focus:outline-none  flex justify-center items-center">
-                        <img src={p7} alt="logo" className="md:cursor-pointer  h-[140px]  drop-shadow-lg"  />
+                        <img src={p7} alt="logo" className="md:cursor-pointer  h-[100px]  drop-shadow-lg"  />
                     </div>
                  
                     
