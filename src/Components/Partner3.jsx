@@ -18,7 +18,7 @@ const Partner3 = () => {
 
                 <div className="flex flex-col justify-center items-center text-center space-y-4">
                      <h1 className=" text-center mb-5 uppercase">Our  Partners</h1>
-                     <p className=" text-xl text-base  text-center text-gray-600 w-full md:w-10/12"> It has been the most incredible journey. We work with some of the best institution and company across the nation</p>
+                     <p className=" text-xl   text-center text-gray-600 w-full md:w-10/12"> It has been the most incredible journey. We work with some of the best institution and company across the nation</p>
                  </div>
         
 
