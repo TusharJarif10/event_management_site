@@ -11,8 +11,8 @@ const Team = () => {
             <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
-                        <h2 className="">Meet the brains</h2>
-                        <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">Talent wins games, but teamwork and intelligence win championships.</p>
+                        <h2 className="uppercase text-blue-500"> <span className="text-blue-800">Meet the </span>brains</h2>
+                        <p className=" text-center pt-5  flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto">Talent wins games, but teamwork and intelligence win championships.</p>
                     </div>
 
                     <div className="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-6 md:gap-x-0">

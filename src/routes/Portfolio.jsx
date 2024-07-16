@@ -33,7 +33,7 @@ const Portfolio = () => {
                 <div className='relative flex flex-col justify-center items-center xl:pt-10 lg:pt-10 xl:mt-20 lg:mt-20'>
 
                     <h1 className='mb-10' data-aos="zoom-in-right">
-                        PORTFOLIO
+                        PORT<span className='text-blue-500'>FOLIO </span>
                     </h1>
 
                     <p className='text-xl text-justify flex-wrap text-wrap pb-10' data-aos="zoom-in-left">
@@ -62,7 +62,7 @@ const Portfolio = () => {
 
                 <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                     <h2 className='px-5 text-center text-balance'>
-                        FOLLOW US ON INSTAGRAM
+                        FOLLOW US ON <span className='text-blue-500'>INSTAGRAM</span>
                     </h2>
 
                     <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">

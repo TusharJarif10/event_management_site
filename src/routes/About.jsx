@@ -89,7 +89,7 @@ function About() {
       <div className="flex flex-col md:flex-row shadow-lg">
         <div className="md:w-1/2 p-4 mt-5">
           <i className="fa-solid fa-bullseye text-4xl mb-2"></i>
-          <h2 className="pb-4">MISSION</h2>
+          <h2 className="pb-4 text-blue-500">   <span className="text-blue-800">MISSI</span>ON</h2>
           <p className="text-xl text-justify">{missionContent}</p>
           <img
             src= {trade}
@@ -99,7 +99,7 @@ function About() {
         </div>
         <div className="md:w-1/2 p-4 mt-5">
           <i className="fa-solid fa-eye text-4xl mb-2"></i>
-          <h2 className="pb-4">VISION</h2>
+          <h2 className="pb-4 text-blue-500">  <span className="text-blue-800">VISI</span>ON</h2>
           <p className="text-xl text-justify">{visionContent}</p>
           <img
             src={wedding}
@@ -111,8 +111,10 @@ function About() {
 
       <div className="p-4 shadow-md mt-10">
         <i className="fa-solid fa-handshake text-4xl mb-2"></i>
-        <h2 className=" mb-4 ">PROMISE</h2>
-        <p className="text-xl text-justify">{promiseContent}</p>
+        <h2 className=" mb-4 text-blue-500">
+          <span className="text-blue-800">PRO</span>
+          MISE</h2>
+        <p className="text-xl text-justify ">{promiseContent}</p>
         <img
           src= {concert}
           className="w-full h-[700px] mt-4"
@@ -122,7 +124,11 @@ function About() {
 
       <div className="p-4 shadow-md mt-10">
         <i className="fa-solid fa-building text-4xl mb-2"></i>
-        <h2 className="mb-4 uppercase">Why This Company</h2>
+        <h2 className="mb-4 uppercase text-blue-500">
+          <span className="text-blue-800 pr-3">
+          Why This
+          </span>
+           Company</h2>
         <ul className="list-none ml-5">
           {whyCompanyContent.map((item, index) => (
             <li key={index} className="mb-4">
@@ -131,8 +137,8 @@ function About() {
                 <div className="text-xl mr-3"> {item.icon} </div>
                 {/* <i className={`${item.icon} text-xl mr-3`}></i> */}
                 <div>
-                  <h3 className="font-semibold text-xl">{item.title}</h3>
-                  <p className="text-xl text-justify">{item.detail}</p>
+                  <h3 className="font-semibold text-xl text-blue-800">{item.title}</h3>
+                  <p className="text-xl text-justify ">{item.detail}</p>
                 </div>
               </div>
             </li>
