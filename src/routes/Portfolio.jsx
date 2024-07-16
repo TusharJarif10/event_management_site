@@ -113,7 +113,7 @@ const Portfolio = () => {
             <div className='pt-24 relative flex flex-col justify-center items-center px-4 mt-10 pb-5'>
 
                 <h1 className='mb-5'>
-                    PORTFOLIO
+                    PORT<span className='text-blue-500'>FOLIO</span>
                 </h1>
 
                 <p className='text-lg text-justify flex-wrap text-wrap font-extralight'>
@@ -146,7 +146,7 @@ const Portfolio = () => {
 
             <div className="my-10 pt-5  flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
                 <h2 className='px-5 text-center text-balance font-extralight'>
-                    FOLLOW US ON INSTAGRAM
+                    FOLLOW US ON  <span className='text-blue-500'>INSTAGRAM</span>
                 </h2>
 
                 <a href="https://www.instagram.com/festivida_event?igsh=dm5qdnBwdWc5cnRp">
