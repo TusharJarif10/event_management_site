@@ -251,15 +251,15 @@ const Hero = () => {
                   Post-Event Analysis
                 </h2>
 
-                <button className=" bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                <button className=" md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
                   <HashLink slot to='/service#postevent'>LEARN MORE</HashLink>
                 </button>
 
-                {/* <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
                   <CustomHashLink slot to='/service#postevent'  offset={2000}>LEARN MORE</CustomHashLink>
-                </button> */}
+                </button>
               </div>
             </div>
 
