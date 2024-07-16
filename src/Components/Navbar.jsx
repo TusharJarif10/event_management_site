@@ -27,7 +27,7 @@ export default function Navbar() {
   return isDesktop ? (
 
     <>
-      <nav className="top-0 fixed w-full bg-gradient-to-b from-teal-200 to-orange-100 pt-2 z-10 flex items-center 
+      <nav className="top-0 fixed w-full bg-gradient-to-b from-slate-300 to-blue-200 pt-2 z-10 flex items-center shadow-lg shadow-slate-400
    justify-between px-28 pb-2"
         data-aos="fade-down"
         data-aos-anchor-placement="bottom-center"
@@ -91,17 +91,17 @@ export default function Navbar() {
 
             <Link to="/contact">
               <button className="ml-16 text-md 
-               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-semibold
-                from-blue-300 to-teal-300 hover:opacity-70 text-blue-950"
+               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b from-[#252966] to-[#009dff] font-semibold shadow-md shadow-black
+                 hover:opacity-70 text-[#ffffff]"
               >
                 <HashLink smooth to='/#contact'>CONTACT US</HashLink>
               </button>
             </Link>
 
-            <div className="flex justify-center items-center gap-2 mr-4">
+            <div className="flex justify-center items-center gap-2 mr-4 ">
               <a href="https://www.facebook.com/FestiVidaE" className='hover:opacity-60'>
                 {/* <FaFacebook size={32} color='#0096FF' /> */}
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 48 48">
+                <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="38" height="38" viewBox="0 0 48 48">
                   <path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path>
                 </svg>
               </a>
@@ -130,7 +130,7 @@ export default function Navbar() {
 
   ) : (
     <>
-      <div className=" bg-gradient-to-b from-teal-200 to-orange-100 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 drop-shadow-xl ">
+      <div className=" bg-gradient-to-b from-slate-300 to-blue-200 w-full fixed top-0 z-10 flex flex-row items-center justify-between px-2 py-4 shadow-lg shadow-slate-400 ">
 
         <div>
           <Link to="/">
@@ -140,7 +140,7 @@ export default function Navbar() {
 
         <div className=''>
           <Drawer className='' open={openDrawer} onClose={() => setOpenDrawer(false)}>
-            <List className='bg-gradient-to-b from-teal-200 to-orange-100 h-full'>
+            <List className='bg-gradient-to-b from-slate-300 to-blue-300 h-full'>
               <ListItemButton>
                 <ListItemIcon>
                   <ListItemText>

@@ -11,6 +11,7 @@ import moynal from "../assets/moynal.jpg";
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import ScrollTop from '../Components/ScrolltoTop';
+import Team from '../Components/Team';
 
 function About() {
   const missionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful. ";
@@ -139,14 +140,15 @@ function About() {
         </ul>
       </div>
 
-      <div className="p-4 shadow-md mt-10">
+      {/* <div className="p-4 shadow-md mt-10">
         <h2 className=" mb-8 pb-8 uppercase">Festivida Overheads</h2>
         <div className="flex flex-col md:flex-row">
           {topManagement.map((person, index) => (
             <div key={index} className="md:w-1/2 p-4 text-center">
               <img
                 src={person.img}
-                className="w-[180px] h-[250px] rounded-full mx-auto mb-4"
+                className="w-full h-[220px]  object-cover object-top rounded-full
+                  mx-auto mb-4"
                 alt={`Photo of ${person.name}`}
               />
               <h3 className="font-semibold text-lg">{person.name}</h3>
@@ -154,8 +156,8 @@ function About() {
             </div>
           ))}
         </div>
-      </div>
-
+      </div> */}
+<Team />
 
       <ScrollTop />
     </div>

@@ -14,6 +14,7 @@ import Location from '../Components/Location';
 import AOS from "aos";
 import { useEffect } from "react";
 import ScrolltoTop from "../Components/ScrolltoTop";
+import Partners from "../Components/Partners";
 
 // import { useNavigate } from 'react-router-dom';
 
@@ -32,9 +33,19 @@ const Hero = () => {
          max-w-screen-xl lg:mx-auto justify-center mt-10 lg:mt-20 md:pt-20 lg:pt-24 xl:pt-24" >
 
         <div className="h-2/3 flex flex-wrap flex-col lg:h-full gap-6 lg:w-2/6
-        text-wrap lg:mt-10">
+        text-wrap lg:mt-10 ">
 
-          <h2 className="uppercase" data-aos="fade-up" >Unforgotable Events</h2>
+          <h2 className="uppercase" data-aos="fade-up" >
+            <span className="pr-3 text-blue-900">
+              Memorable
+            </span>
+
+            <span className="text-blue-500">
+              Events
+            </span>
+          </h2>
+
+
 
           <p className="text-xl text-justify" data-aos="fade-right"
             data-aos-offset="300"
@@ -48,9 +59,9 @@ const Hero = () => {
 
           <div className={"w-full flex gap-4 mt-3"}>
 
-            <button className=" text-lg mb-10 
-               px-4 py-2 rounded-md  bg-card-foreground bg-gradient-to-b font-semibold
-                from-blue-300 to-teal-300 hover:opacity-70 text-blue-900"
+            <button className=" text-lg md:mb-10 
+               px-4 py-2 rounded-md  bg-card-foreground font-semibold
+                bg-gradient-to-b from-[#252966] to-[#009dff]  hover:opacity-70 text-white shadow-md shadow-black"
             >
               <HashLink smooth to='/#contact'>GET STARTED</HashLink>
 
@@ -60,10 +71,10 @@ const Hero = () => {
 
 
         <div className={"h-1/2 lg:h-full lg:w-4/6 mr-6 relative cursor-pointer"}
-          // data-aos="fade-left"
-          // data-aos-offset="300"
-          // data-aos-easing="ease-in-sine"
-          // data-aos-duration="1000"
+        // data-aos="fade-left"
+        // data-aos-offset="300"
+        // data-aos-easing="ease-in-sine"
+        // data-aos-duration="1000"
         >
           <Carousel images={countries} />
         </div>
@@ -72,22 +83,36 @@ const Hero = () => {
 
 
 
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20">
-        <h2 className=" px-2 mx-2 flex items-center justify-center">
-          WE'VE GOT YOUR BACK
-        </h2>
-        <p className=" text-justify flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto" data-aos="fade-top"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine">
-          We are a full service international event planning and design studio
-          based in Miami, Florida. Global clients seek our services to plan,
-          design, and produce their special events, not only in South Florida,
-          but all over the world.
-        </p>
+      <div className="max-w-screen-xl mx-auto my-20" >
+        <Partners />
+      </div>
+
+
+      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20 pt-20 max-w-screen-xl mb-10 md:mx-auto mx-4 ">
+        <div className="bg-gradient-to-b from-slate-300 to-blue-200 w-full py-5 ">
+          <h2 className=" px-2 mx-2 flex items-center justify-center">
+            <span className="px-3 text-blue-800">
+              WE'VE GOT
+            </span>
+
+            <span className="text-blue-500">
+              YOUR BACK
+            </span>
+
+          </h2>
+          <p className=" text-center pt-5  flex-wrap text-wrap px-2 text-xl max-w-screen-xl mx-auto" data-aos="fade-top"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
+            We are a full service national event planning and design studio
+            based in Dhaka, Bangladesh.
+          </p>
+        </div>
+
+
 
       </div>
 
-      <div className="max-w-screen-xl mx-auto container px-2 xl:px-0 py-5">
+      <div className="max-w-screen-xl mx-auto container px-2 xl:px-0 py-5 md:mb-[10rem]">
         <div className="flex flex-col">
 
           <div className="mt-10 grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
@@ -100,8 +125,8 @@ const Hero = () => {
                 </h2>
 
 
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -117,8 +142,8 @@ const Hero = () => {
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
 
@@ -135,8 +160,8 @@ const Hero = () => {
 
                 </h2>
 
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -151,8 +176,8 @@ const Hero = () => {
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
@@ -164,8 +189,8 @@ const Hero = () => {
                 <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Post-Event Analysis
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
                   <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -176,8 +201,8 @@ const Hero = () => {
                 <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -190,8 +215,8 @@ const Hero = () => {
                   Photo &  <br />
                   Videography
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -203,8 +228,8 @@ const Hero = () => {
                 <h2 className='text-[#ffffff] text-center font-semibold '>
                   Concert
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
@@ -213,17 +238,28 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:px-20 xl:px-20">
+
+
+      <div className="mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6  mb-10 md:mx-auto mx-4 
+      lg:px-20 xl:px-20 bg-gradient-to-b from-slate-300 to-blue-200 max-w-screen-xl  ">
         <h2 >
-          GET IN TOUCH
+          <span className="text-blue-800 pr-2">
+            GET IN
+          </span>
+          <span className="text-blue-500">
+            TOUCH
+          </span>
+
         </h2>
-        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-lg text-center mb-10">
+        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-xl text-center mb-10">
           At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
           <br />
           and you can directly contact us at +880 1304177789.
         </p>
 
       </div>
+
+
 
       <div className=" flex flex-wrap justify-center items-center" data-aos="flip-left" data-aos-duration="1000" id="contact" >
         <Contact />

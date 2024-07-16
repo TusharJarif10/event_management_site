@@ -19,7 +19,7 @@ const Footer = () => {
 
 
 
-    <div className="mx-auto  xl:px-0 lg:px-0 sm:px-0 px-0 bg-gradient-to-b from-orange-100 to-teal-200 shadow-2xl  shadow-[#000000] py-2 mt-[5rem]">
+    <div className="mx-auto  xl:px-0 lg:px-0 sm:px-0 px-0 bg-gradient-to-b from-slate-300 to-blue-200 shadow-2xl shadow-black py-2 ">
       <div className="flex flex-col items-center justify-center">
 
         <div className=''>

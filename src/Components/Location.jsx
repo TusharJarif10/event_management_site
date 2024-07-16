@@ -3,12 +3,22 @@ export default function Location() {
   return (
     <>
     <section className="">
-    <div className=" max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-        <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-            <h2>VISIT OUR LOCATION</h2>
+    <div className=" max-w-7xl mx-auto py-16 md:px-0 px-4 md:py-20  ">
+        <div className="text-center bg-gradient-to-b from-slate-300 to-blue-200 py-5 max-w-screen-xl mx-auto ">
+            <h2>
+                <span className="text-blue-800 pr-3">
+                VISIT OUR
+                </span>
+                <span className="text-blue-500">
+                LOCATION
+                </span>
+                 </h2>
+                 <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-xl text-center pt-4">
+                    You are always welcome to visit our office.
+                 </p>
           
         </div>
-        <div className="mt-16 lg:mt-20">
+        <div className="mt-5 md:mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="rounded-lg overflow-hidden">
 
@@ -31,13 +41,7 @@ export default function Location() {
                         </div>
                         <div className="border-t border-gray-200 px-6 py-4 ">
                             <h3 className="text-lg font-bold text-blue-800">Hours</h3>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Saturday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Sunday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Monday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Tuesday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Wednesday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Thrusday: 10am - 8pm</p>
-                            <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2">Friday: Closed</p>
+                             <p className="text-lg text-blue-800 text-justify flex-wrap text-wrap px-2 mx-2"> Always Open (24/7)</p>
                         </div>
 
                         <div className="border-t border-gray-200 px-6 py-4 ">
