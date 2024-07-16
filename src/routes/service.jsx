@@ -109,7 +109,7 @@ const Service = () => {
                 </div>
 
 
-
+                
 
                 <div
                     className="max-w-screen-xl relative mx-auto my-10"
@@ -129,24 +129,27 @@ const Service = () => {
                     </div>
                 </div>
 
-
                 <div
-                    className=" max-w-screen-xl relative mx-auto my-10"
-                    id="postevent" >
-                    <div className='flex flex-row gap-10 justify-center items-center px-5'>
-                        <div className='lg:w-1/2 w-full'>
+                    className="max-w-screen-xl relative mx-auto my-10"
+                    id="concert" >
+                    <div className='flex flex-row gap-10 justify-center items-center px-5' >
+
+                    <div className='lg:w-1/2 w-full'>
                             <h2 className='pb-5'>
-                                Post-Event Analysis
+                                Concert
                             </h2>
                             <p className='text-xl text-justify flex-wrap text-wrap' data-aos="zoom-in" data-aos-duration="900">
                                 Festivida places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
                             </p>
+                    </div>
+
+                        <div className='lg:w-2/4 xl:w-2/4 w-full' data-aos="fade-right" data-aos-duration="900">
+                            <img src={concert} alt="" />
                         </div>
-                        <div className='lg:w-2/4 xl:w-2/4 w-full' data-aos="fade-left" data-aos-duration="900">
-                            <img src={award} alt="" />
-                        </div>
+                        
                     </div>
                 </div>
+                         
 
 
                 <div
@@ -168,39 +171,24 @@ const Service = () => {
                 </div>
 
 
+                
+
+                
+
                 <div
                     className=" max-w-screen-xl relative mx-auto my-10"
-                    id="photovideo" >
+                    id="postevent" >
                     <div className='flex flex-row gap-10 justify-center items-center px-5'>
                         <div className='lg:w-1/2 w-full'>
                             <h2 className='pb-5'>
-                                Photo &
-                                Videography
+                                Post-Event Analysis
                             </h2>
                             <p className='text-xl text-justify flex-wrap text-wrap' data-aos="zoom-in" data-aos-duration="900">
                                 Festivida places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
                             </p>
                         </div>
                         <div className='lg:w-2/4 xl:w-2/4 w-full' data-aos="fade-left" data-aos-duration="900">
-                            <img src={birthday} alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    className="max-w-screen-xl relative mx-auto my-10"
-                    id="concert" >
-                    <div className='flex flex-row gap-10 justify-center items-center px-5' >
-                        <div className='lg:w-2/4 xl:w-2/4 w-full' data-aos="fade-right" data-aos-duration="900">
-                            <img src={concert} alt="" />
-                        </div>
-                        <div className='lg:w-1/2 w-full'>
-                            <h2 className='pb-5'>
-                                Concert
-                            </h2>
-                            <p className='text-xl text-justify flex-wrap text-wrap' data-aos="zoom-in" data-aos-duration="900">
-                                Festivida places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
-                            </p>
+                            <img src={award} alt="" />
                         </div>
                     </div>
                 </div>
@@ -351,29 +339,7 @@ const Service = () => {
             </div>
 
 
-            <div
-                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-10 lg:pt-10 xl:pt-10" id='postevent' data-aos="zoom-in" >
-
-                <div className='flex lg:flex-row flex-col gap-5 justify-between'>
-
-                    <div className='w-auto'>
-                        <h2 className='pb-5'>
-
-                            Post-Event Analysis
-                        </h2>
-                        <p className='text-lg text-justify flex-wrap text-wrap'>
-                            Our event management company places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
-                        </p>
-
-                    </div>
-
-                    <div className='lg:w-1/3 w-full'>
-                        <img src={award} alt="" />
-                    </div>
-                </div>
-
-
-            </div>
+            
 
 
             <div
@@ -442,6 +408,30 @@ const Service = () => {
 
                     <div className='lg:w-1/3 w-full'>
                         <img src={trade} alt="" />
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div
+                className="relative flex flex-col justify-between lg:flex-row px-4 mx-2 sm:px-8  lg:px-12 xl:px-36  mb-10 lg:pt-10 xl:pt-10" id='postevent' data-aos="zoom-in" >
+
+                <div className='flex lg:flex-row flex-col gap-5 justify-between'>
+
+                    <div className='w-auto'>
+                        <h2 className='pb-5'>
+
+                            Post-Event Analysis
+                        </h2>
+                        <p className='text-lg text-justify flex-wrap text-wrap'>
+                            Our event management company places great importance on Post-Event Analysis to ensure continuous improvement and client satisfaction. We meticulously gather feedback from attendees and stakeholders, providing detailed reports that assess the event's success and highlight areas for enhancement. This comprehensive analysis allows us to identify strengths and opportunities, ensuring each event we manage is better than the last. Trust us to not only deliver exceptional events but also to refine our services through thorough post-event evaluations.
+                        </p>
+
+                    </div>
+
+                    <div className='lg:w-1/3 w-full'>
+                        <img src={award} alt="" />
                     </div>
                 </div>
 

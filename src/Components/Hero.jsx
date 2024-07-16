@@ -17,7 +17,16 @@ import Partner from '../Components/Partner3';
 
 import ScrolltoTop from "../Components/ScrolltoTop";
 
+import CustomHashLink from './CustomHashLink';
+
 // import { useNavigate } from 'react-router-dom';
+
+
+const scrollWithOffset = (el,sc) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+  const yOffset = 200; // Adjust the offset as needed
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
 
 
 const Hero = () => {
@@ -101,10 +110,18 @@ const Hero = () => {
                   Corporate Events
                 </h2>
 
-
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
-                  <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service#corporate'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                   <CustomHashLink to="/service/#corporate" offset={-80}>
+                   LEARN MORE
+                    </CustomHashLink>
+
+                 
                 </button>
               </div>
 
@@ -119,9 +136,14 @@ const Hero = () => {
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
-                    <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service#entertainment'>LEARN MORE</HashLink>
+                </button>
+
+                  <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                    <CustomHashLink slot to='/service/#entertainment' offset={200} >LEARN MORE</CustomHashLink>
                   </button>
 
                 </Link>
@@ -137,9 +159,14 @@ const Hero = () => {
 
                 </h2>
 
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service#socialevent'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
-                  <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
+                  <CustomHashLink slot to='/service#socialevent' offset={400} >LEARN MORE</CustomHashLink>
                 </button>
               </div>
 
@@ -153,34 +180,52 @@ const Hero = () => {
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
-                  <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service#marketing'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <CustomHashLink slot to='/service#marketing' offset={640}>LEARN MORE</CustomHashLink>
                 </button>
 
               </div>
             </div>
-            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={concert} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center font-semibold'>
-                  Post-Event Analysis
+                <h2 className='text-[#ffffff] text-center font-semibold '>
+                  Concert
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
-                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
-                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service#concert'>LEARN MORE</HashLink>
+                </button>
+                
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <CustomHashLink slot to='/service#concert' offset={300}>LEARN MORE</CustomHashLink>
                 </button>
               </div>
             </div>
+            
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="tradeSomething" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+
+                <button className="md:hidden bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
-                  <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service#trade'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
+                  <CustomHashLink slot to='/service#trade'  offset={1400}>LEARN MORE</CustomHashLink>
                 </button>
               </div>
             </div>
@@ -199,18 +244,26 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={concert} alt="business" />
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#ffffff] text-center font-semibold '>
-                  Concert
+                <h2 className='text-[#fdfeff] text-center font-semibold'>
+                  Post-Event Analysis
                 </h2>
-                <button className="bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+
+                <button className=" bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
                 from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm">
-                  <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service#postevent'>LEARN MORE</HashLink>
                 </button>
+
+                {/* <button className="hidden md:inline-block bg-gray-500 text-md hover:bg-gradient-to-b font-semibold
+                from-blue-500 to-amber-200 hover:text-gray-700 text-amber-100 px-2 py-1 rounded-sm ">
+                  <CustomHashLink slot to='/service#postevent'  offset={2000}>LEARN MORE</CustomHashLink>
+                </button> */}
               </div>
             </div>
+
+            
           </div>
         </div>
       </div>

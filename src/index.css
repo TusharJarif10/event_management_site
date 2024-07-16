@@ -47,4 +47,5 @@ p{
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-padding-top: 300px; 
 }
