@@ -1,7 +1,7 @@
 
-import wedding from "../assets/concert.jpg";
-import concert from "../assets/concert.jpg";
-import trade from "../assets/trade-fair.jpg";
+import vision from "../assets/Vision.jpg";
+import mission from "../assets/Mission.jpg";
+import promise from "../assets/Promises.jpg";
 import Jayanta from "../assets/jayanta.jpg";
 import chayan from "../assets/chayan.jpg";
 import babor from "../assets/babor.jpg";
@@ -92,7 +92,7 @@ function About() {
           <h2 className="pb-4 text-blue-500">   <span className="text-blue-800">MISSI</span>ON</h2>
           <p className="text-xl text-justify">{missionContent}</p>
           <img
-            src= {trade}
+            src= {mission}
             className="w-full h-[400px] mt-4 our-vision-animate"
             alt="Illustrating our mission"
           />
@@ -102,7 +102,7 @@ function About() {
           <h2 className="pb-4 text-blue-500">  <span className="text-blue-800">VISI</span>ON</h2>
           <p className="text-xl text-justify">{visionContent}</p>
           <img
-            src={wedding}
+            src={vision}
             className="w-full h-[400px] mt-4 our-vision-animate"
             alt="Illustrating our vision"
           />
@@ -116,8 +116,8 @@ function About() {
           MISE</h2>
         <p className="text-xl text-justify ">{promiseContent}</p>
         <img
-          src= {concert}
-          className="w-full h-[700px] mt-4"
+          src= {promise}
+          className="w-full md:h-[600px] h-[400px] mt-4"
           alt="Illustrating our promise"
         />
       </div>

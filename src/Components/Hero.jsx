@@ -1,10 +1,13 @@
 
-import wedding from "../assets/wedding.jpg";
-import concert from "../assets/concert.jpg";
+import entertainment from "../assets/entertainment.jpg";
+import concert from "../assets/Concert.jpg";
 import videography from "../assets/videograpy.jpg";
-import award from "../assets/award.jpg";
-import trade from "../assets/trade-fair.jpg";
-import birthday from "../assets/birthday.jpg";
+import corporate from "../assets/Corporate.jpg";
+import postevent from "../assets/postevent.jpg";
+import trade from "../assets/trade.jpg";
+import marketing from "../assets/Marketing.jpg";
+
+
 import Contact from '../Components/contact';
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
@@ -115,31 +118,44 @@ const Hero = () => {
           <div className=" grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
 
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="meeting" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={corporate} alt="meeting" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-amber-50 text-center font-semibold'>
                   Corporate Events
                 </h2>
 
 
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service/#mob_corporate'>LEARN MORE</HashLink>
+                </button>
+
+                <button className=" hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#corporate'>LEARN MORE</HashLink>
                 </button>
+
+
+
               </div>
 
             </div>
 
 
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="concert" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={entertainment} alt="concert" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-semibold '>
                   Entertainment Event
                 </h2>
                 <Link to={"/service"}>
 
-                  <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                  <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                    <HashLink slot to='/service/#mob_entertainment'>LEARN MORE</HashLink>
+                  </button>
+
+                  <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                     <HashLink slot to='/service/#entertainment'>LEARN MORE</HashLink>
                   </button>
@@ -149,88 +165,123 @@ const Hero = () => {
 
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={wedding} alt="wedding" />
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={entertainment} alt="wedding" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-semibold '>
                   Social Event
 
                 </h2>
 
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
-                  <HashLink slot to='/service/#socialevent'>LEARN MORE</HashLink>
+                  <HashLink slot to='/service/#mob_social'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
+                  <HashLink slot to='/service/#social'>LEARN MORE</HashLink>
                 </button>
               </div>
 
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={videography} alt="videography" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={marketing} alt="videography" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-semibold'>
                   Marketing &
                   <br />
                   Promotion
                 </h2>
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service/#mob_marketing'>LEARN MORE</HashLink>
+                </button>
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#marketing'>LEARN MORE</HashLink>
                 </button>
 
               </div>
             </div>
+
+          
+
             <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={award} alt="award" />
-              <div className="absolute flex justify-center items-center flex-col gap-2">
-                <h2 className='text-[#fdfeff] text-center font-semibold'>
-                  Post-Event Analysis
-                </h2>
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
-                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
-                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
-                </button>
-              </div>
-            </div>
-            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={trade} alt="trade" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={trade} alt="trade" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Trade Fair
                 </h2>
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service/#mob_trade'>LEARN MORE</HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#trade'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="birthday" />
+
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={videography} alt="birthday" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#fdfeff] text-center font-semibold'>
                   Photo &  <br />
                   Videography
                 </h2>
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service/#mob_photovideo'>LEARN MORE</HashLink>
+                </button>
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#photovideo'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
 
-            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-left" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70 " src={concert} alt="business" />
+            <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={concert} alt="business" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-semibold '>
                   Concert
                 </h2>
-                <button className="bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
+                  <HashLink slot to='/service/#mob_concert'>LEARN MORE
+                  </HashLink>
+                </button>
+
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
                 hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm">
                   <HashLink slot to='/service/#concert'>LEARN MORE</HashLink>
                 </button>
               </div>
             </div>
+
+            <div className=" w-full h-full relative flex justify-center items-center" data-aos="fade-left" data-aos-duration="1500">
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={postevent} alt="award" />
+              <div className="absolute flex justify-center items-center flex-col gap-2">
+                <h2 className='text-[#fdfeff] text-center font-semibold'>
+                  Post-Event Analysis
+                </h2>
+                <button className="md:hidden bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
+                  <HashLink slot to='/service/#mob_postevent'>LEARN MORE</HashLink>
+                </button>
+                <button className="hidden md:inline-block bg-gradient-to-b from-slate-300 to-blue-300 text-blue-800 text-md hover:bg-gradient-to-b font-semibold
+                hover:from-blue-500 hover:to-amber-200 hover:text-gray-700  px-2 py-1 rounded-sm ">
+                  <HashLink slot to='/service/#postevent'>LEARN MORE</HashLink>
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

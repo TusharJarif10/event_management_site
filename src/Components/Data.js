@@ -1,18 +1,18 @@
 export const countries = [
    {
-    image:"/images/birthday.jpg",
+    image:"/images/postevent.jpg",
    //  title: "Birthday"
    },
    {
-      image:"/images/business.jpg",
+      image:"/images/trade.jpg",
       // title: "Birthday"
      },
      {
-      image:"/images/concert.jpg",
+      image:"/images/entertainment.jpg",
       
      },
      {
-      image:"/images/corporate.jpg",
+      image:"/images/Marketing.jpg",
       
      },
 
