@@ -1,10 +1,38 @@
-import g1 from "../assets/g1_1_11zon.jpg"
-import g2 from "../assets/g2_2_11zon.jpg"
-import g3 from "../assets/g3_3_11zon.jpg"
-import g4 from "../assets/g4_4_11zon.jpg"
-import g6 from "../assets/g6_5_11zon.jpg"
-import g7 from "../assets/g7_6_11zon.jpg"
-import g8 from "../assets/g8_7_11zon.jpg"
+import landscape1 from "../assets/landscape1.jpg"
+import landscape2 from "../assets/landscape2.jpg"
+import landscape3 from "../assets/landscape3.jpg"
+import landscape4 from "../assets/landscape4.jpg"
+import landscape5 from "../assets/landscape5.jpg"
+
+
+import mainphoto1 from "../assets/main photo1.jpg"
+import mainphoto2 from "../assets/main photo2.jpg"
+import mainphoto3 from "../assets/main photo3.jpg"
+import mainphoto4 from "../assets/main photo4.jpg"
+import mainphoto5 from "../assets/main photo5.jpg"
+
+
+import Portrait1 from "../assets/Portrait1.jpg"
+import Portrait2 from "../assets/portrat2.jpg"
+import Portrait3 from "../assets/portrait3.jpg"
+import Portrait4 from "../assets/portrait4.jpg"
+import Portrait5 from "../assets/Portrait5.jpg"
+
+
+import smallone1 from "../assets/small one1.jpg"
+import smallone2 from "../assets/small one2.jpg"
+import smallone3 from "../assets/small one3.jpg"
+import smallone4 from "../assets/small one4.jpg"
+import smallone5 from "../assets/small one5.jpg"
+
+
+import smalltwo1 from "../assets/small two1.jpg"
+import smalltwo2 from "../assets/small two2.jpg"
+import smalltwo3 from "../assets/small two3.jpg"
+import smalltwo4 from "../assets/small two4.jpg"
+import smalltwo5 from "../assets/small two5.jpg"
+
+
 
 
 
@@ -20,25 +48,25 @@ export default function Gallery() {
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src= {g4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src= {mainphoto1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-								<img src={g2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src= {g1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src= {smallone1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
 								</a>
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src={g8} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smalltwo1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
 								</a>
@@ -46,7 +74,7 @@ export default function Gallery() {
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src={g7} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={Portrait1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
@@ -56,32 +84,32 @@ export default function Gallery() {
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src={g8} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={Portrait2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src={g3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={mainphoto2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-								<img src={g6} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</a>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src={g2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smallone2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
 								</a>
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src={g1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smalltwo2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
 								</a>
@@ -89,123 +117,111 @@ export default function Gallery() {
 						</div>
 
 					</div>
-					{/* <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+					 <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-								<img src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gin</h3>
-							</a>
+												</a>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smallone3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Whiskey</h3>
+									
 								</a>
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smalltwo3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Vodka</h3>
-								</a>
+																</a>
 							</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={Portrait3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Brandy</h3>
-							</a>
+															</a>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={mainphoto3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
-							</a>
+														</a>
 						</div>
 
-					</div> */}
+					</div> 
 
 
-					{/* <div className="py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+					<div className="py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={Portrait4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Brandy</h3>
-							</a>
+															</a>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={mainphoto4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
-							</a>
+														</a>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-								<img src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gin</h3>
-							</a>
+												</a>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smallone4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Whiskey</h3>
+									
 								</a>
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smalltwo4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Vodka</h3>
-								</a>
+																</a>
 							</div>
 						</div>
 
-					</div> */}
+					</div> 
 
 
-					{/* <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+					 <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-								<img src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gin</h3>
-							</a>
+												</a>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smallone5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Whiskey</h3>
+									
 								</a>
 								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-									<img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+									<img src={smalltwo5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-									<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Vodka</h3>
-								</a>
+																</a>
 							</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={landscape5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Brandy</h3>
-							</a>
+															</a>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
 							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={mainphoto5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-								<h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
-							</a>
+														</a>
 						</div>
 
-					</div> */}
+					</div> 
 				</div>
 			</section>
 
