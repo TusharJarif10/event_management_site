@@ -83,12 +83,12 @@ const Hero = () => {
 
 
 
-      <div className="max-w-screen-xl mx-auto my-20" >
+      <div className="max-w-screen-xl mx-auto my-10" >
         <Partners />
       </div>
 
 
-      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20 pt-20 max-w-screen-xl mb-10 md:mx-auto mx-4 ">
+      <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20 pt-10 max-w-screen-xl mb-10 md:mx-auto mx-4 ">
         <div className="bg-gradient-to-b from-slate-300 to-blue-200 w-full py-5 ">
           <h2 className=" px-2 mx-2 flex items-center justify-center">
             <span className="px-3 text-blue-800">
@@ -107,15 +107,12 @@ const Hero = () => {
             based in Dhaka, Bangladesh.
           </p>
         </div>
-
-
-
       </div>
 
-      <div className="max-w-screen-xl mx-auto container px-2 xl:px-0 py-5 md:mb-[10rem]">
+      <div className="max-w-screen-xl mx-auto container px-4 xl:px-0 md:mb-[10rem]">
         <div className="flex flex-col">
 
-          <div className="mt-10 grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
+          <div className=" grid lg:grid-cols-2 gap-x-1 gap-y-1 items-center">
 
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
               <img className="cursor-pointer transition duration-300 hover:opacity-70" src={birthday} alt="meeting" />
