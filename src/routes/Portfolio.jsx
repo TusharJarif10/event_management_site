@@ -2,11 +2,7 @@ import { useMediaQuery } from '../hooks/use-media-query';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Gallery from '../Components/Gallery';
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
-import fes from "../assets/festivida.png";
-import Contact from '../Components/contact';
+
 import AOS from "aos";
 import ScrollTop from '../Components/ScrolltoTop';
 import { useEffect } from "react";

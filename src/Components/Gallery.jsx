@@ -41,7 +41,7 @@ export default function Gallery() {
 	return (
 		<>
 
-			<section className="">
+			<section className="md:px-0 px-2">
 				<div className="py-4 mx-auto max-w-screen-2xl sm:py-4">
 
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
