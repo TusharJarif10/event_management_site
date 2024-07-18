@@ -13,7 +13,22 @@ import Footer from '../Components/Footer';
 import ScrollTop from '../Components/ScrolltoTop';
 import Team from '../Components/Team';
 
-function About() {
+import { useEffect } from "react";
+
+
+const About = () => {
+
+   
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+     
+  }, []);
+
+
+
+
+
   const missionContent = "Our mission is to transform our clients' visions into reality by delivering exceptional events that exceed expectations. We aim to provide comprehensive event management solutions that cater to diverse needs, ensuring every event is unique, memorable, and successful. ";
   const visionContent = "Our goal is to make ourselves memorable, sustainable and your lifetime partner. Your pride by our presentation is our experience and strength for future. With all our expertise and experience and overall, with your support, our ultimate vision is to put ourselves on the MNC shelves.";
   const promiseContent =
