@@ -19,6 +19,8 @@ import { px } from 'framer-motion';
 
 const Service = () => {
 
+
+
     const handleEmailClick = () => {
         window.location.href = 'mailto:Festivida74@Gmail.com?subject=Hello&body=This is the email body.';
     };
