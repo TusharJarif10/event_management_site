@@ -48,7 +48,7 @@ export default function Gallery() {
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
 							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src= {mainphoto1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src= {mainphoto1} alt="" className="absolute inset-0 h-full w-full object-cover object-top  group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</div>
@@ -74,7 +74,7 @@ export default function Gallery() {
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
 							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src={Portrait1} alt="" className="absolute inset-0 object-center group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+								<img src={Portrait1} alt="" className="absolute inset-0 md:object-cover md:h-full object-center group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
 							</div>
