@@ -47,107 +47,107 @@ export default function Gallery() {
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src= {mainphoto1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
 								<img src={landscape1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src= {smallone1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								</div>
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smalltwo1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
+								</div>
 							</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-								<img src={Portrait1} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+								<img src={Portrait1} alt="" className="absolute inset-0 object-center group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 						</div>
 					</div>
 					<div className="py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={Portrait2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={mainphoto2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
 								<img src={landscape2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 								
-							</a>
+							</div>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smallone2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								</div>
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smalltwo2} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
+								</div>
 							</div>
 						</div>
 
 					</div>
 					 <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
 								<img src={landscape3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-												</a>
+												</div>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smallone3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								</div>
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smalltwo3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-																</a>
+																</div>
 							</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={Portrait3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-															</a>
+															</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={mainphoto3} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-														</a>
+														</div>
 						</div>
 
 					</div> 
@@ -156,32 +156,32 @@ export default function Gallery() {
 					<div className="py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={Portrait4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-															</a>
+															</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={mainphoto4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-														</a>
+														</div>
 						</div>
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
 								<img src={landscape4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-												</a>
+												</div>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smallone4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								</div>
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smalltwo4} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-																</a>
+																</div>
 							</div>
 						</div>
 
@@ -190,35 +190,35 @@ export default function Gallery() {
 
 					 <div className=" py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 						<div className="col-span-2 sm:col-span-1 md:col-span-2 ">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
 								<img src={landscape5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-												</a>
+												</div>
 							<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smallone5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
 									
-								</a>
-								<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+								</div>
+								<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 									<img src={smalltwo5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 									<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-																</a>
+																</div>
 							</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-1  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={landscape5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-															</a>
+															</div>
 						</div>
 
 						<div className="col-span-2 sm:col-span-1 md:col-span-2  h-auto md:h-full flex flex-col">
-							<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+							<div className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
 								<img src={mainphoto5} alt="" className="absolute inset-0 h-full w-full object-cover group-hover:scale-125 transition-transform duration-500 ease-in-out" />
 								<div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-														</a>
+														</div>
 						</div>
 
 					</div> 
