@@ -6,6 +6,7 @@ import corporate from "../assets/Corporate.jpg";
 import postevent from "../assets/postevent.jpg";
 import trade from "../assets/trade.jpg";
 import marketing from "../assets/Marketing.jpg";
+import social from "../assets/social.jpg";
 
 
 import Contact from '../Components/contact';
@@ -92,7 +93,7 @@ const Hero = () => {
 
 
       <div className=" flex flex-col items-center justify-center flex-wrap text-wrap gap-6 lg:pt-20 xl:pt-20 pt-10 max-w-screen-xl mb-10 md:mx-auto mx-4 ">
-        <div className="bg-gradient-to-b from-slate-300 to-blue-200 w-full py-5 ">
+        <div className=" w-full py-5 ">
           <h2 className=" px-2 mx-2 flex items-center justify-center">
             <span className="px-3 text-blue-800">
               WE'VE GOT
@@ -166,7 +167,7 @@ const Hero = () => {
             </div>
 
             <div className=" w-full h-full relative flex justify-center items-center " data-aos="fade-right" data-aos-duration="1500">
-              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={entertainment} alt="wedding" />
+              <img className="cursor-pointer transition duration-300 hover:opacity-70 object-cover h-[350px] w-[650px]" src={social} alt="wedding" />
               <div className="absolute flex justify-center items-center flex-col gap-2">
                 <h2 className='text-[#ffffff] text-center font-semibold '>
                   Social Event
@@ -289,7 +290,7 @@ const Hero = () => {
 
 
       <div className="mt-16 pt-10 flex flex-col items-center justify-center flex-wrap text-wrap gap-6  mb-10 md:mx-auto mx-4 
-      lg:px-20 xl:px-20 bg-gradient-to-b from-slate-300 to-blue-200 max-w-screen-xl  ">
+      lg:px-20 xl:px-20  max-w-screen-xl  ">
         <h2 >
           <span className="text-blue-800 pr-2">
             GET IN
@@ -299,7 +300,7 @@ const Hero = () => {
           </span>
 
         </h2>
-        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-xl text-center mb-10">
+        <p className="text-xl text-wrap flex-wrap px-2 mx-2 max-w-screen-xl text-center md:mb-5 ">
           At Festivida, we try to turn your visions into reality. Tell us a bit about yourself,
           <br />
           and you can directly contact us at +880 1304177789.

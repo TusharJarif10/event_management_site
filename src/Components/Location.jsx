@@ -4,7 +4,7 @@ export default function Location() {
     <>
     <section className="">
     <div className=" max-w-7xl mx-auto py-16 md:px-0 px-4 md:py-20  ">
-        <div className="text-center bg-gradient-to-b from-slate-300 to-blue-200 py-5 max-w-screen-xl mx-auto ">
+        <div className="text-center py-5 max-w-screen-xl mx-auto ">
             <h2>
                 <span className="text-blue-800 pr-3">
                 VISIT OUR

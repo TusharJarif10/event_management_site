@@ -14,7 +14,7 @@ const Partners = () => {
 
         <div className="  py-10">
 
-            <div className="flex flex-col justify-center items-center text-center space-y-4 bg-gradient-to-b from-slate-300 to-blue-200 py-5 mb-10 md:mx-auto mx-4 " >
+            <div className="flex flex-col justify-center items-center text-center space-y-4  py-5 mb-10 md:mx-auto mx-4 " >
                 <h2 className=" text-center uppercase">
                     <span className="text-blue-800 pr-3">
                     Trusted by these
